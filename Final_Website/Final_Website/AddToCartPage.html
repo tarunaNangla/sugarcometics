@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to cart page</title>
+    <link rel="stylesheet" href="Addtocartpage.css">
+</head>
+<body>
+    <h1>Add to cart page</h1>
+    <div id="cartpagemaindiv">
+        <div id="cartpagemaindiv1"></div>
+        <div id="cartpagemaindiv2"></div>
+    </div>
+   
+</body>
+</html>
+
+<script src="Addtocartpage.js"></script>
+<script>
+    //div2
+    var cartpagemaindiv21 = document.createElement("div")
+    cartpagemaindiv21.setAttribute("id","cartpagemaindiv21")
+    var cartpagemaindiv21imag = document.createElement("img")
+    cartpagemaindiv21imag.setAttribute("src","https://in.sugarcosmetics.com/desc-images/Offers_price_details.svg")
+    var cartpagemaindiv21div = document.createElement("div")
+    cartpagemaindiv21div.innerText="Offers and Price Details"
+
+    cartpagemaindiv21.append(cartpagemaindiv21imag,cartpagemaindiv21div)
+
+    var cartpagemaindiv22=document.createElement("div");
+    cartpagemaindiv22.setAttribute("id","cartpagemaindiv22")
+
+    var cartpagemaindiv221=document.createElement("div");
+    cartpagemaindiv221.setAttribute("id","cartpagemaindiv221")
+
+    var cartpagemaindiv221img = document.createElement("img")
+    cartpagemaindiv221img.setAttribute("src","https://in.sugarcosmetics.com/desc-images/Offers_icon.svg")
+    var cartpagemaindiv221div = document.createElement("div")
+    cartpagemaindiv221div.innerText="GFMSH";
+
+
+    cartpagemaindiv221.append(cartpagemaindiv221img,cartpagemaindiv221div)
+
+     var pricedetails = document.createElement("div");
+     pricedetails.setAttribute("id","pricedetails")
+
+     var pricedetailsimg = document.createElement("img")
+     pricedetailsimg.setAttribute("src","https://in.sugarcosmetics.com/desc-images/PriceDetails.svg")
+      var pricedetailsdiv1 = document.createElement("div")
+      pricedetailsdiv1.innerText="Price";
+      var pricedetailsdiv2 = document.createElement("div")
+      pricedetailsdiv2.innerText="Details"
+
+      pricedetails.append(pricedetailsimg,pricedetailsdiv1,pricedetailsdiv2)
+
+      var pricedetailsmaindiv = document.createElement("div")
+      pricedetailsmaindiv.setAttribute("id","pricedetailsmaindiv")
+
+      var pricedetailsmaindiv1 = document.createElement("div")
+      pricedetailsmaindiv1.setAttribute("id","pricedetailsmaindiv1")
+     
+      var pricedetailsmaindiv1img = document.createElement("img");
+      pricedetailsmaindiv1img.setAttribute("src","https://in.sugarcosmetics.com/desc-images/CartSubtotal.svg")
+       var pricedetailsmaindiv1div1 = document.createElement("div")
+       pricedetailsmaindiv1div1.innerText="Cart Sub Total:"
+        var pricedetailsmaindiv1div2 = document.createElement("div");
+        pricedetailsmaindiv1div2.innerText=total;
+        pricedetailsmaindiv1div2.setAttribute("id","totalprice")
+
+
+
+        pricedetailsmaindiv1.append(pricedetailsmaindiv1img,pricedetailsmaindiv1div1,pricedetailsmaindiv1div2)
+
+        var pricedetailsmaindiv2 = document.createElement("div")
+      pricedetailsmaindiv2.setAttribute("id","pricedetailsmaindiv2")
+     
+      var pricedetailsmaindiv2img = document.createElement("img");
+      pricedetailsmaindiv2img.setAttribute("src","https://in.sugarcosmetics.com/desc-images/Shipping_Cost.svg")
+       var pricedetailsmaindiv2div1 = document.createElement("div")
+       pricedetailsmaindiv2div1.innerText="Shipping Cost:"
+        var pricedetailsmaindiv2div2 = document.createElement("div");
+        pricedetailsmaindiv2div2.innerText="0.00"
+
+
+
+        pricedetailsmaindiv2.append(pricedetailsmaindiv2img,pricedetailsmaindiv2div1,pricedetailsmaindiv2div2)
+
+        var pricedetailsmaindiv3 = document.createElement("div")
+      pricedetailsmaindiv3.setAttribute("id","pricedetailsmaindiv3")
+     
+      var pricedetailsmaindiv3img = document.createElement("img");
+      pricedetailsmaindiv3img.setAttribute("src","https://in.sugarcosmetics.com/desc-images/Discount.svg")
+       var pricedetailsmaindiv3div1 = document.createElement("div")
+       pricedetailsmaindiv3div1.innerText="Discount Applied:"
+        var pricedetailsmaindiv3div2 = document.createElement("div");
+        //discount price
+        pricedetailsmaindiv3div2.innerText=0;
+
+
+
+        pricedetailsmaindiv3.append(pricedetailsmaindiv3img,pricedetailsmaindiv3div1,pricedetailsmaindiv3div2)
+
+        var pricedetailsmaindiv4 = document.createElement("div")
+      pricedetailsmaindiv4.setAttribute("id","pricedetailsmaindiv4")
+     
+      var pricedetailsmaindiv4img = document.createElement("img");
+      pricedetailsmaindiv4img.setAttribute("src","https://in.sugarcosmetics.com/desc-images/AmountPayable.svg")
+       var pricedetailsmaindiv4div1 = document.createElement("div")
+       pricedetailsmaindiv4div1.innerHTML="Amount Payable:<p id=puja>Including ₹220.42 in taxes</p>"
+        var pricedetailsmaindiv4div2 = document.createElement("div");
+        //amount payable
+        pricedetailsmaindiv4div2.innerText=pricedetailsmaindiv1div2.innerText-pricedetailsmaindiv3div2.innerText
+
+
+
+        pricedetailsmaindiv4.append(pricedetailsmaindiv4img,pricedetailsmaindiv4div1,pricedetailsmaindiv4div2)
+
+     pricedetailsmaindiv.append(pricedetailsmaindiv1,pricedetailsmaindiv2,pricedetailsmaindiv3,pricedetailsmaindiv4)
+
+      var proceedtoPayment = document.createElement("div")
+      proceedtoPayment.innerText="Proceed To Payment"
+      proceedtoPayment.setAttribute("id","proceedtoPayment")
+      proceedtoPayment.addEventListener("click",function(){
+        window.location.href="Payment.html"
+      })
+
+
+    cartpagemaindiv22.append(cartpagemaindiv221,pricedetails,pricedetailsmaindiv,proceedtoPayment)
+
+
+    document.querySelector("#cartpagemaindiv2").append(cartpagemaindiv21,cartpagemaindiv22)
+
+   
+</script>
+

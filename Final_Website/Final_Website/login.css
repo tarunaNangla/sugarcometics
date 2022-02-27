@@ -1,0 +1,132 @@
+#container{
+    height: 900px;
+    width: 700px;
+    background-image:url('https://in.sugarcosmetics.com/Login_bg.svg');
+    margin: auto;
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    
+}
+#login{
+    height: 420px;
+    width: 90%;
+    text-align: left;
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   padding-left: 20px;
+   padding-top: 20px;
+   padding-right: 20px;
+   border-radius: 4px;
+}
+#login>div{
+    height: 35px;
+    width: 400px;
+    
+    display: flex;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+#login>div>p{
+    margin-top: 5px;
+}
+form>div{
+    display: flex;
+    margin-top: 20px;
+}
+form>div>p{
+    font-size: 29px;
+    margin-top: 5px;
+}
+.numb{
+    width: 160px;
+    height: 40px;
+    border-top: none;
+    border-bottom: 1px solid rgb(68,68,68);
+    border-right: none;
+    border-left: none;
+    margin-left: 2px;
+    font-size: 28px;
+    text-align: left;
+    outline: none;
+    margin-top: 0px;
+}
+
+#submit{
+    width: 130px;
+    height: 42px;
+    margin-left: 20px;
+    color: white;
+    background-color: rgb(173,173,173);
+    border: 1px solid rgb(173,173,173);
+}
+#submit:hover{
+    background-color: rgb(51,51,51);
+    cursor: pointer;
+}
+.otp{
+   width: 80px;
+   height: 30px;
+   background-color: rgb(248,248,248);
+   border: 1px solid rgb(179, 175, 175);
+   font-size: 20px;
+   text-align: center;
+}
+button{
+    height: 40px;
+    width: 200px;
+    margin-top: 30px;
+    background-color: rgb(253,181,206);
+    color: white;
+    border: 1px solid rgb(253,181,206);
+}
+#guide{
+    color:rgb(253,181,206);
+}
+
+#header{
+   margin-top: 40px;
+    margin-left: 20px;
+    width: 300px;
+    height: 30px;
+    color: white;  
+}
+#header>h2{
+   margin-top: 10px;
+}
+#footer{
+   text-align: center;
+   margin-top: 60px;
+}
+#footer>h2{
+    padding-top: 50px;
+}
+button,h4:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(252,39,121);
+}
+#checkbox{
+    height:20px;
+    width: 20px;
+    background-color: rgb(252,39,121) 
+}
+#checkbox:checked {
+   background-color: rgb(252,39,121);
+   
+    cursor: pointer;
+}
+#checkbox:hover{
+    cursor: pointer;
+}
+#x{
+    margin-left: 20px;
+    color:rgb(249,161,198);
+    font-size: 24px;   
+}
+#x:hover{
+    cursor: pointer;
+}

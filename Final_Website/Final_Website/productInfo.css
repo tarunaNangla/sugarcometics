@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+   
+}
+/* *:not(#parent){
+    background-color: rgb(245,245,245);
+} */
+
+#parent{
+    width: 80%;
+    height: 340px;
+    margin: auto;
+    /* border: 1px solid red; */
+    display: grid;
+    gap:50px;
+    grid-template-columns: repeat(4,231px);
+    grid-template-rows: repeat(13,250px);
+    margin-top: 10px;
+    background-color: white;
+    /* background-color: rgb(245,245,245); */
+}
+#img{
+    height: 256px;
+    width: 231px;
+}
+
+#parent>div{
+    /* width: 231px;
+    height: 320px; */
+    /* border: 1px solid green; */
+    text-align: center;
+    background-color: white;
+}
+#price{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+#price1{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+#pseudodiv{
+    /* visibility: hidden; */
+    width: 231px;
+    height: 30px;
+    /* border: 1px solid deeppink; */
+    margin-top: 10px;
+    display: none;
+   
+}
+#pseudodiv>div:first-child{
+    background-color: white;
+    height: 100%;
+    width: 30%;
+    color: black;
+
+}
+
+h5{
+    padding-top: 7px;
+}
+h4,p{
+    color: gray;
+
+}
+p{
+    font-size: 14px;
+}
+#stardiv{
+    display: flex;
+    margin-left: 170px;
+    background-color: white;
+   
+}
+
+.star{
+    width: 30px;
+    height: 30px;
+    margin-left: -20px;
+    margin-right: 15px;
+}
+#star1{
+    width: 20px;
+    height: 20px;
+}
+#pricediv{
+    display: flex;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+#pricediv1{
+    display: flex;
+    margin-left: 80px;
+}
+#pricediv>p:first-child{
+    padding-top: 8px;
+}
+#innerbox:hover{
+    display: block;
+}
+#sidediv{
+    width: 500px;
+    margin-left: 50px;
+    /* margin-top: 50px; */
+    background-color: white;
+}
+p{
+    font-size: 20px;
+}
+
+.logo{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+#childofsildediv{
+    display: flex;
+    margin-left: 70px;
+    margin-top: 20px;
+    background-color: white;
+}
+#bigdiv1{
+    display: flex;
+    background-color: rgb(245,245,245);
+    width: 600px;
+    height: 30px;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+}
+
+#pseudodiv>div:last-child{
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 70%;
+    
+}
+
+#addtocartdiv{
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 180px;
+    height: 33px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+    margin-top: 10px;
+}
+
+#innerbox{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+

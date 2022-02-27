@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    background-color: #f5f5f5;
+}
+#header{
+    display:flex;
+    /* border:1px solid black; */
+    width:88%;
+    height:30px;
+    margin:auto;
+    justify-content:space-between;
+}
+#section1{
+    display:flex;
+    /* border:1px solid black; */
+}
+#section1>div:nth-child(1){
+    padding-top:6px;
+}
+#section1>div:nth-child(2){
+    /* border:1px solid black; */
+    width:20px;
+    text-align: center;
+    font-size: 21px;
+
+}
+#section1>div:nth-child(3){
+    /* border:1px solid black; */
+    color:#7e8a93;
+    padding-top: 3px;
+    font-size:18px;
+}
+#section1>div:nth-child(4){
+    /* border:1px solid black; */
+    width:20px;
+    text-align: center;
+    font-size: 21px;
+}
+#section1>div:nth-child(5){
+    /* border:1px solid black; */
+    color:#7e8a93;
+    padding-top: 3px;
+    font-size:18px;
+    font-weight: bold;
+}
+#section2{
+    width:16%;
+    /* border:1px solid black; */
+    justify-content:space-around;
+    display:flex;
+}
+#section2>div:first-child{
+    width:40%;
+    /* border:1px solid black; */
+    height:30px;
+    display:flex;
+
+}
+#section2>div:last-child{
+    width:40%;
+    /* border:1px solid black; */
+    height:30px;
+    display:flex;
+
+}
+#section2>div>div:last-child{
+    padding-top:3px;
+    color:#a87152;
+}
+#section3{
+    /* border:1px solid black; */
+    height:30px;
+    width:88%;
+    margin:auto;
+    margin-top:5px;
+    display:flex;
+}
+#section3>div:first-child{
+    /* border:1px solid black; */
+    width:2.5%;
+    height:30px;
+    text-align: center;
+    font-size: 17px;
+    color:#9889bb;
+}
+#section3>div:last-child{
+    color:#9889bb;
+    padding-top:3px;
+}
+#container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows:repeat(1,410px);
+    width:78%;
+    margin:auto;
+    margin-top:40px;
+    gap:45px;
+}
+#container>div{
+    /* border:1px solid black; */
+    background-color:white;
+}
+.e>div>img{
+        width:231px;
+        height:300px;
+        padding-top:10px;
+
+    }
+    .e>div>p{
+        font-size: 14px;
+        font-weight:bold;
+        color:#888a88;
+        text-align: center;
+        margin-top:-2px;
+    }
+    .e>div{
+        text-align: center;
+        margin-top:-5px;
+    }
+    #e1{
+        display:flex;
+        justify-content: center;
+        margin-top:5px;
+    }
+    #e1>div>img{
+        height:20px;
+        width:20px;
+    }
+    .h>div>img{
+        width:231px;
+        height:300px;
+        padding-top:10px;
+
+    }
+    .h>div>p{
+        font-size: 14px;
+        font-weight:bold;
+        color:#888a88;
+        text-align: center;
+        margin-top:-2px;
+    }
+    .h>div{
+        text-align: center;
+        margin-top:-5px;
+    }
+    #h1{
+        display:flex;
+        justify-content: center;
+        margin-top:5px;
+    }
+    #h1>div>img{
+        height:20px;
+        width:20px;
+    }
+    .i>div>img{
+        width:231px;
+        height:300px;
+        padding-top:10px;
+
+    }
+    .i>div>p{
+        font-size: 14px;
+        font-weight:bold;
+        color:#888a88;
+        text-align: center;
+        margin-top:-2px;
+    }
+    .i>div{
+        text-align: center;
+        margin-top:-5px;
+    }
+    #i1{
+        display:flex;
+        justify-content: center;
+        margin-top:5px;
+    }
+    #i1>div>img{
+        height:20px;
+        width:20px;
+    }
+    .k>div>img{
+        width:231px;
+        height:300px;
+        padding-top:10px;
+
+    }
+    .k>div>p{
+        font-size: 14px;
+        font-weight:bold;
+        color:#888a88;
+        text-align: center;
+        margin-top:-2px;
+    }
+    .k>div{
+        text-align: center;
+        margin-top:-5px;
+    }
+    #k1{
+        display:flex;
+        justify-content: center;
+        margin-top:5px;
+    }
+    #k1>div>img{
+        height:20px;
+        width:20px;
+    }
+    .n>div>img{
+        width:231px;
+        height:300px;
+        padding-top:10px;
+
+    }
+    .n>div>p{
+        font-size: 14px;
+        font-weight:bold;
+        color:#888a88;
+        text-align: center;
+        margin-top:-2px;
+    }
+    .n>div{
+        text-align: center;
+        margin-top:-5px;
+    }
+    #n1{
+        display:flex;
+        justify-content: center;
+        margin-top:5px;
+    }
+    #n1>div>img{
+        height:20px;
+        width:20px;
+    }
+    </style>
+       <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        #footer{
+            width: 100%;
+            height: 620px;
+            /* border: 1px solid red; */
+            background-color: black;
+            color: white;
+        }
+        #div1{
+            margin: auto;
+            width: 120px;
+            height: 120px;
+            /* border: 1px solid white; */
+            background-color: black;
+            
+        }
+        #div1>img{
+            height: 120px;
+            width: 120px;
+            background-color: black;
+        }
+        #div2{
+            height: 20px;
+            width: 200px;
+            margin: auto;
+            /* border: 1px solid white; */
+            display: flex;
+            background-color: black;
+        }
+        #div2>img{
+            width: 20px;
+            height: 20px;
+            /* display: block; */
+            margin-right: 11px;
+            background-color: black;
+        }
+        #div3{
+            width: 900px;
+            height: 30px;
+            /* border: 1px solid white; */
+            margin-left: 100px;
+            margin-top: 30px;
+            display: flex;
+            background-color: black;
+        }
+        #div3>div:first-child{
+            justify-content: flex-start;
+            background-color: black;
+        }
+        #div3>div:last-child{
+            justify-content: flex-end;
+            margin-left: 330px;
+            background-color: black;
+        }
+        #div4{
+            width: 1100px;
+            height: 60px;
+            /* border: 1px solid white; */
+            margin-left: 100px;
+            margin-top: 5px;
+            display: flex;
+            background-color: black;
+        }
+        #div4>input{
+            background-color: black;
+            color: white;
+            font-size: 15px;
+            border: none;
+            width: 260px;
+            height: 60px;
+        }
+        #div4>button{
+            background-color: deeppink;
+            color: white;
+            border: deeppink;
+            width: 93.38px;
+            height: 40px;
+            border-radius: 7px;
+            margin-top: 20px;
+        }
+        #div4>div{
+            width: 206px;
+            height: 48px;
+            color: gray;
+            margin-left: 250px;
+            margin-top: 7px;
+            background-color: black;
+        }
+        #div4>img:nth-child(4){
+            width: 99.88px;
+            height:30px ;
+            margin-top: 4px;
+            margin-right: 8px;
+            background-color: black;
+        }
+        #div4>img:nth-child(5){
+            width: 87.52px;
+            height:30px ;
+            margin-top: 4px;
+            /* margin-right: 8px; */
+            background-color: black;
+        }
+        #hr{
+            margin-left: 100px;
+            width: 260px;
+            background-color: black;
+        }
+        #div5,#div7{
+            width: 1140px;
+            height: 20.39px;
+            font-size: 17px;
+            margin: 0px 0px 8px;
+            margin-top: 20px;
+            margin-left: 100px;
+            background-color: black;
+        }
+        #div6{
+            width: 1140px;
+            height: 24px;
+            font-size: 16px;
+            margin: 0px 0px 8px;
+            margin-top: 15px;
+            margin-left: 100px;
+            display: flex;
+            color: gray;
+            /* border: 1px solid white; */
+            background-color: black;
+        }
+        #div6>div{
+            margin-right: 90px;
+            background-color: black;
+        }
+        #div8{
+            width: 1270px;
+            height: 90px;
+            margin-left: 100px;
+            margin-top: 20px;
+            display: flex;
+            color: white;
+            /* border: 1px solid white; */
+            background-color: black;
+        }
+        #cate1{
+            color: gray;
+            padding-top: 5px;
+            background-color: black;
+        }
+        #cate2{
+            color: gray;
+            font-size: 13px;
+            padding-top: 5px;
+            background-color: black;
+        }
+        #parentdiv81{
+            display: flex;
+            background-color: black;
+        }
+        #parentdiv81>img{
+            width: 15px;
+            height: 15px;
+            background-color: black;
+        }
+        #div8>div{
+            margin-right: 60px;
+            background-color: black;
+        }
+        #hr2{
+            margin-left: 70px;
+            margin-right: 40px;
+            margin-top: 30px;
+            background-color: black;
+        }
+        #div9{
+            width: 1140px;
+            height: 20.39px;
+            font-size: 17px;
+            margin: auto;
+            margin-top: 30px;
+            margin-left: 500px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="section1">
+          <div>
+              <img src="https://in.sugarcosmetics.com/desc-images/breadcrumb_home.svg" />
+          </div>
+          <div> / </div>
+          <div>Blend trend makeup brush</div>
+          <div> / </div>
+          <div>Eyes brushes</div>
+        </div>
+        <div id="section2">
+            <div>
+                <div>
+                    <img src="https://in.sugarcosmetics.com/desc-images/filterIcon.png" />
+                </div>
+                <div>Filters</div>
+            </div>
+            <div>
+                <div>
+                  <img src="https://in.sugarcosmetics.com/desc-images/sortIcon.png" />
+                </div>  
+                <div>Sort</div>
+            </div>
+        </div>
+      </div>
+      <div id="section3">
+          <div>-</div>
+          <div>5 items</div>
+        </div>
+        <div id="container">
+        <div class="e">
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-3-min.jpg?v=1627573657" />
+            </div>
+            <div>
+                <p>BLEND TREND EYESHADOW...</p>
+            </div>
+            <div>Rs.399</div>
+            <div id="e1">
+            <div>
+                <img src="https://in.sugarcosmetics.com/star_filled.png" />
+            </div>
+            <div>
+                5(1)
+            </div>
+            </div>
+        </div>
+        <div class="h">
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-14_1.jpg?v=1627659982" />
+            </div>
+            <div>
+                <p>BLEND TREND EYESHADOW...</p>
+            </div>
+            <div>Rs.399</div>
+            <div id="h1">
+            <div>
+                <img src="https://in.sugarcosmetics.com/star_filled.png" />
+            </div>
+            <div>
+                5(1)
+            </div>
+            </div>
+        </div>
+        <div class="k">
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-2-min.jpg?v=1627573652" />
+            </div>
+            <div>
+                <p>BLEND TREND EYESHADOW...</p>
+            </div>
+            <div>Rs.399</div>
+            <div id="k1">
+            <div>
+                <img src="https://in.sugarcosmetics.com/star_filled.png" />
+            </div>
+            <div>
+                5(1)
+            </div>
+            </div>
+        </div>
+        <div class="i">
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-13.jpg?v=1627659977" />
+            </div>
+            <div>
+                <p>BLEND TREND DUAL...</p>
+            </div>
+            <div>Rs.599</div>
+            <div id="i1">
+            <div>
+                <img src="https://in.sugarcosmetics.com/star_filled.png" />
+            </div>
+            <div>
+                5(2)
+            </div>
+            </div>
+        </div>
+        <div class="n">
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-5-min.jpg?v=1627573639" />
+            </div>
+            <div>
+                <p>BLEND TREND DUAL...</p>
+            </div>
+            <div>Rs.599</div>
+            <div id="n1">
+            <div>
+                <img src="https://in.sugarcosmetics.com/star_filled.png" />
+            </div>
+            <div>
+                5(2)
+            </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
+<script>
+document.querySelector(".e").addEventListener("mouseenter",entering4);
+document.querySelector(".e").addEventListener("mouseleave",leaving4);  
+document.querySelector(".h").addEventListener("mouseenter",entering7);
+document.querySelector(".h").addEventListener("mouseleave",leaving7);
+document.querySelector(".i").addEventListener("mouseenter",entering8);
+document.querySelector(".i").addEventListener("mouseleave",leaving8);
+document.querySelector(".k").addEventListener("mouseenter",entering10);
+document.querySelector(".k").addEventListener("mouseleave",leaving10);
+document.querySelector(".n").addEventListener("mouseenter",entering13);
+document.querySelector(".n").addEventListener("mouseleave",leaving13);
+
+function entering4(){
+    document.querySelector(".e").style.boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px";
+}
+function leaving4(){
+    document.querySelector(".e").style.boxShadow="0px 0px";
+}
+
+function entering7(){
+    document.querySelector(".h").style.boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px";
+}
+function leaving7(){
+    document.querySelector(".h").style.boxShadow="0px 0px";
+}
+
+function entering8(){
+    document.querySelector(".i").style.boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px";
+}
+function leaving8(){
+    document.querySelector(".i").style.boxShadow="0px 0px";
+}
+
+function entering10(){
+    document.querySelector(".k").style.boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px";
+}
+function leaving10(){
+    document.querySelector(".k").style.boxShadow="0px 0px";
+}
+
+function entering13(){
+    document.querySelector(".n").style.boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px";
+}
+function leaving13(){
+    document.querySelector(".n").style.boxShadow="0px 0px";
+}
+</script>
+
+
+
+<script>
+    var div1 = document.createElement("div")
+    div1.setAttribute("id","div1");
+    var div1img = document.createElement("img");
+    div1img.setAttribute("src","https://in.sugarcosmetics.com/Footer_sugar_icon.png")
+    div1.append(div1img)
+
+    var div2 = document.createElement("div")
+    div2.setAttribute("id","div2");
+    var div2img1 = document.createElement("img")
+    //div2img1.innerHTML="<img src=https://in.sugarcosmetics.com/desc-images/facebook.svg/>"
+    div2img1.setAttribute("src","https://in.sugarcosmetics.com/desc-images/facebook.svg");
+
+    var div2img2 = document.createElement("img")
+    div2img2.setAttribute("src","data:image/png;base64,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");
+
+    var div2img3 = document.createElement("img")
+    div2img3.setAttribute("src","https://in.sugarcosmetics.com/desc-images/Instagram.svg");
+
+    var div2img4 = document.createElement("img")
+    div2img4.setAttribute("src","https://in.sugarcosmetics.com/desc-images/Pinterest.svg");
+
+    var div2img5 = document.createElement("img")
+    div2img5.setAttribute("src","https://in.sugarcosmetics.com/desc-images/Tumblr.svg");
+
+    var div2img6 = document.createElement("img")
+    div2img6.setAttribute("src","https://in.sugarcosmetics.com/desc-images/Youtube.svg");
+
+    var div2img7 = document.createElement("img")
+    div2img7.setAttribute("src","https://cdns.iconmonstr.com/wp-content/assets/preview/2012/240/iconmonstr-twitter-1.png");
+
+    div2.append(div2img1,div2img2,div2img3,div2img4,div2img5,div2img6,div2img7)
+
+    var div3 = document.createElement("div")
+    div3.setAttribute("id","div3")
+
+    var div3text1 = document.createElement("div")
+    div3text1.innerText="SUBSCRIBE TO OUR NEWSLETTER"
+    var div3text2 = document.createElement("div")
+    div3text2.innerText="GET THE NEW SUGAR APP TODAY."
+    div3.append(div3text1,div3text2)
+
+    var div4 = document.createElement("div");
+    div4.setAttribute("id","div4")
+    var div4input = document.createElement("input")
+    div4input.setAttribute("type","email")
+    div4input.setAttribute("placeholder","Your email address")
+    
+    var div4btn = document.createElement("button")
+    div4btn.innerText="SIGN UP"
+
+    var div4text = document.createElement("div")
+    div4text.innerText="Tap into a better shopping experience."
+
+    var div4img1 = document.createElement("img")
+    div4img1.setAttribute("src","https://in.sugarcosmetics.com/playstore.png")
+
+    var div4img2 = document.createElement("img");
+    div4img2.setAttribute("src","https://in.sugarcosmetics.com/apple-store.png")
+
+    div4.append(div4input,div4btn,div4text,div4img1,div4img2)
+
+    var hr = document.createElement("hr")
+    hr.setAttribute("id","hr")
+
+    var div5 = document.createElement("div")
+    div5.innerText="INFORMATION"
+    div5.setAttribute("id","div5")
+
+    var div6 = document.createElement("div");
+    div6.setAttribute("id","div6")
+
+    var div61 = document.createElement("div");
+    div61.innerText="Contact Us"
+    var div62 = document.createElement("div");
+    div62.innerText="Terms & Conditions"
+    var div63 = document.createElement("div");
+    div63.innerText="Returns"
+    var div64 = document.createElement("div");
+    div64.innerText="FAQs"
+    var div65 = document.createElement("div");
+    div65.innerText="About Us"
+
+    div6.append(div61,div62,div63,div64,div65)
+
+    var div7 = document.createElement("div")
+    div7.innerText="GET IN TOUCH"
+    div7.setAttribute("id","div7")
+
+    
+    var div8 = document.createElement("div")
+     div8.setAttribute("id","div8")
+
+     var parentdiv81 = document.createElement("div")
+     parentdiv81.setAttribute("id","parentdiv81")
+     
+     var div81img = document.createElement("img")
+     div81img.setAttribute("src","https://in.sugarcosmetics.com/desc-images/phone_android_white.svg")
+
+     var div81 = document.createElement("div")
+     div81.innerHTML="Call us at <p id=cate1>022-2847-5555</p> <p id=cate1>022-6805-6009</p> <p id=cate2>Monday to Friday : 9 AM to 7 PM</p>"
+     div81.setAttribute("id","backgroundblack")
+     div81.style.backgroundColor="black"
+
+     parentdiv81.append(div81img,div81)
+      
+     var div82 = document.createElement("div");
+     div82.innerHTML="Support <p id=cate1>hello@sugarcosmetics.com</p>"
+  
+     var div83 = document.createElement("div");
+     div83.innerHTML="WORK WITH US <p id=cate1>careers@sugarcosmetics.com</p>"
+     var div84 = document.createElement("div");
+     div84.innerHTML="PRESS & MEDIA <p id=cate1>pr@sugarcosmetics.com</p>"
+     var div85 = document.createElement("div");
+     div85.innerHTML="INFLUENCER COLLAB <p id=cate1>JOIN US</p>"
+
+
+    div8.append(parentdiv81,div82,div83,div84,div85)
+
+    var hr2 = document.createElement("hr")
+    hr2.setAttribute("id","hr2")
+
+    var div9 = document.createElement("div")
+    div9.innerText="Copyright © 2022 SUGAR Cosmetics. All rights reserved."
+    div9.setAttribute("id","div9")
+    
+
+    document.getElementById("footer").append(div1,div2,div3,div4,hr,div5,div6,div7,div8,hr2,div9)
+
+</script>

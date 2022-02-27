@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="dropDown.css">
+    <!-- <style>
+      #home_nav{
+        z-index: ;
+      }
+    </style> -->
+   
+  </head>
+  <body>
+    <!-- <h1>Home Page</h1> -->
+    <!-- <img name="slide"/> -->
+   
+    <div id="header-container">
+      <div id="header">
+        <div class="logo">
+          <img src="https://in.sugarcosmetics.com/desc-images/SUGARLogo1.png" alt="" />
+        </div>
+        <div class="searchbar">
+          <input
+            type="text"
+            class="search_input"
+            placeholder='Try "Liquid Lipstick"'
+          />
+          <a href="" class="search_icon">Search</a>
+        </div>
+        <div class="login_btn">
+          <img
+            src="https://t4.ftcdn.net/jpg/00/65/77/27/240_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg"
+            alt=""
+          />
+
+          <div onclick="window.location.href='login.html'">LOGIN/</div>
+          <div onclick="window.location.href='signup.html'">SIGN UP</div>
+        </div>
+
+
+
+
+        <div class="cute_btn">
+
+            <img id="wishlist"
+              src="https://cdn-icons-png.flaticon.com/128/1077/1077086.png"
+              alt="wishlist"
+              placeholder="Wishlist"
+            />
+            <img  id="cart"
+              src="https://cdn-icons-png.flaticon.com/512/726/726564.png"
+              alt="cart"
+              placeholder="cart"
+            />
+
+
+            <img id="discount"
+              src="https://cdn-icons-png.flaticon.com/512/879/879859.png"
+              alt="discount"
+              placeholder="Discount"
+            />
+
+        </div>
+      </div>
+      <div id="home_nav">
+        <ul>
+          <li>
+            <a href="makeup.html" class="nav_link" style="padding-left: 20px">
+              MAKEUP</a
+            >
+            <div class="dropdown-makeup" >
+              <ul>
+                <li id="lips"> LIPS </li>
+                <li id="face"> FACE</li>
+                <li id="kajal"> EYES</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="Brushes.html" class="nav_link">BRUSHES</a>
+            <div class="dropdown-makeup">
+              <ul>
+                <li id="facebrushes">FACE BRUSHES</li>
+                <li id="eyebrushes">EYE BRUSHES</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="skincare.html" class="nav_link"> SKINCARE </a>
+            <div class="dropdown-makeup">
+              <ul>
+                <li id="MOISTURIZERS">MOISTURIZERS</li>
+                <li id="MASKS">MASKS</li>
+                <li id="SETTINGMISTS">SETTING MISTS</li>
+                <li id="COFFEECULTURERANGE">COFFEE CULTURE RANGE</li>
+                <li id="SHEETMASKCOMBO">SHEET MASK COMBO</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="trending1.html" class="nav_link"> TRENDING </a>
+            <div class="dropdown-makeup">
+              <ul>
+                <li id="SUGARMERCHSTATION">SUGAR MERCH STATION</li>
+                
+                <li id="MAKEUPKITS">MAKEUP KITS</li>
+                <li id="BESTSELLERS">BESTSELLERS</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="Blog.html" class="nav_link">BLOG </a>
+            <div class="dropdown-makeup">
+              <ul>
+                <li id="featured">FEATURED</li>
+                <li id="makeupblog">MAKEUP</li>
+                <li id="skincareblog">SKINCARE</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="offer.html" class="nav_link" id="offerconnect">OFFERS</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="carousel" data-flickity='{"autoPlay":true }'>
+      <div
+        class="carousel-cell"
+        style="
+          background-image: url(https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/63e4cb2f-1f4a-4cee-aca0-f7b27493f207.gif);
+        "
+      ></div>
+      <div
+        class="carousel-cell"
+        style="
+          background-image: url(https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/0588e730-17e6-48d5-afc3-f31f76aba63c.jpg);
+        "
+      ></div>
+      <div
+        class="carousel-cell"
+        style="
+          background-image: url(https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/cad8e141-4958-43d8-8ba5-1825a7ca7b3c.jpg);
+        "
+      ></div>
+      <div
+        class="carousel-cell"
+        style="
+          background-image: url(https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/a95ad57f-5e7a-4901-bc1c-0e76548c225c.jpg);
+        "
+      ></div>
+      <div
+        class="carousel-cell"
+        style="
+          background-image: url(https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/d0f5f1e8-8a31-4475-b7d1-e1fc0b4993de.jpg);
+        "
+      ></div>
+    </div>
+    <div class="category1">SUGAR STREAMING</div>
+    <div id="gif">
+      <img
+        src="https://d24p13nvfnwxmb.cloudfront.net/wp-content/uploads/2020/01/Cool-Model-Gif.gif"
+        alt=""
+      />
+      <img
+        src="https://images.milledcdn.com/2020-09-07/lan-x_PQopJJ2Ruq/JtEfzBaIqWnn.jpeg"
+        alt=""
+      />
+      <img
+        src="https://blog.sugarcosmetics.com/wp-content/uploads/2020/01/Neutral-Model-Gif.gif"
+        alt=""
+      />
+      <img
+        src="https://img.buzzfeed.com/buzzfeed-static/static/2020-01/6/19/asset/d054b0508b36/anigif_sub-buzz-4181-1578340004-1.gif"
+        alt=""
+      />
+      <img
+        src="https://gifcontent.com/wp-content/uploads/2020/02/Makeup-Gif.gif"
+        alt=""
+      />
+    </div>
+    <div class="category1">REFER YOUR FRIENDS</div>
+    <img
+      class="category2"
+      src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/fdba12e0-88f3-442b-b8b8-ec72851bdb1c.jpg"
+      alt=""
+    />
+
+    <div class="category1">BESTSELLERS</div>
+    <div id="homedemo">
+      <div class="pujadiv4"></div>
+      <div class="pujadiv5"></div>
+      <div class="pujadiv6"></div>
+      <div class="pujadiv7"></div>
+    </div>
+
+    <div class="category1">QUICK BEAUTY TIPS WITH SUGAR</div>
+    <img name="slideQUICKBEAUTYTIPSWITHSUGAR" />
+
+    <div class="category1">HOT DEALS</div>
+    <div class="hotdealsdiv">
+      <img
+        src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/f10c5bf2-ff89-41c9-a426-aeb5cdb8dd51.jpg"
+        alt=""
+      />
+      <img
+        src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/09efe31f-7487-40ae-9e79-2ebf4810eb8a.jpg"
+        alt=""
+      />
+      <img
+        src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/1ef0c97c-a7d0-421d-ba91-1fb46faf9579.jpg"
+        alt=""
+      />
+    </div>
+
+    <div class="category1">ULTIMATE LIPSTICK QUIZ</div>
+    <img
+      src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/520e0668-3e5f-4c35-95f5-5bbd35f8fdb2.jpg"
+      alt=""
+      class="category3"
+    />
+
+    <div class="category1">SUPER SAVERS</div>
+    <div id="homedemo">
+      <div class="pujadiv"></div>
+      <div class="pujadiv1"></div>
+      <div class="pujadiv2"></div>
+      <div class="pujadiv3"></div>
+    </div>
+
+    <div class="category1">TOP PICKS OF THE WEEK</div>
+    <div class="TOPPICKSOFTHEWEEK">
+      <img
+        src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/c5dd2934-a4a3-49b1-b58c-399eb2747354.jpg"
+        alt=""
+      />
+      <img
+        src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/3f2d05ce-a225-4f86-8a00-166635460d3c.jpg"
+        alt=""
+      />
+      <img
+        src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/dc7d4536-a22c-4f51-9f20-37cdfaf353b0.jpg"
+        alt=""
+      />
+    </div>
+
+    <div class="category1">GIFT SETS</div>
+    <div id="homedemo">
+      <div class="pujadiv20"></div>
+      <div class="pujadiv21"></div>
+      <div class="pujadiv22"></div>
+      <div class="pujadiv23"></div>
+    </div>
+
+    <div class="category1">THIS OR THAT</div>
+    <div class="category4">
+      <img
+        src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/49b4baef-a9f6-45b3-aa59-75ad9e230546.jpg"
+        alt=""
+        class="category5"
+      />
+      <img
+        src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/1814e259-4006-468e-aa55-cc458f059b49.jpg"
+        alt=""
+        class="category5"
+      />
+    </div>
+
+    <div class="category1">JUST-IN</div>
+    <div id="homedemo">
+      <div class="pujadiv8"></div>
+      <div class="pujadiv9"></div>
+      <div class="pujadiv10"></div>
+      <div class="pujadiv11"></div>
+    </div>
+
+    <div class="category1">SUGAR BEAUTY BLOG</div>
+    <div class="category4">
+      <img
+        src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/75ab3e40-a3c7-4b1f-bd7b-120ec70d6594.jpg"
+        alt=""
+        class="category6"
+      />
+      <img
+        src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/31e96b81-0b2b-41e8-b160-8dcfea8cad3c.jpg"
+        alt=""
+        class="category6"
+      />
+      <img
+        src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/846ada76-e9bf-4058-8a3c-51defac75547.jpg"
+        alt=""
+        class="category6"
+      />
+    </div>
+
+    <div class="category1">SKINCARE BASICS</div>
+    <div id="homedemo">
+      <div class="pujadiv12"></div>
+      <div class="pujadiv13"></div>
+      <div class="pujadiv14"></div>
+      <div class="pujadiv15"></div>
+    </div>
+
+    <div class="category1">EXPLORE</div>
+    <div class="explorediv">
+      <img
+        src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/841fcc89-0bfe-4674-bb67-09aed2e9fc9e.jpg"
+        alt=""
+      />
+      <img
+        src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/e81c59e2-eadb-43ef-bed7-c5a1f20f1cf8.jpg"
+        alt=""
+      />
+      <img
+        src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/8974ca6c-9008-4f35-b86d-1f7c8d140105.jpg"
+        alt=""
+      />
+      <img
+        src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/5cde9c52-11d4-435e-863e-28c4bfa3132a.jpg"
+        alt=""
+      />
+    </div>
+
+    <!-- READ MORE ABOUT -->
+    <div id="parentREADMOREABOUT">
+      <div id="READMOREABOUT">READ MORE ABOUT SUGAR COSMETICS</div>
+      <div id="READMOREABOUTdiv"></div>
+
+      <!-- Footer -->
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<!-- 
+<script>
+          var i=0;
+          var images = [];
+          var time = 1000;
+          images[0]="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/63e4cb2f-1f4a-4cee-aca0-f7b27493f207.gif"
+          images[1]="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/0588e730-17e6-48d5-afc3-f31f76aba63c.jpg"
+          images[2]="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/cad8e141-4958-43d8-8ba5-1825a7ca7b3c.jpg"
+          images[3]="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/a95ad57f-5e7a-4901-bc1c-0e76548c225c.jpg"
+          images[4]="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/d0f5f1e8-8a31-4475-b7d1-e1fc0b4993de.jpg"
+    
+    
+         function changeImg(){
+             document.slide.src=images[i];
+             if(i<images.length-1){
+                 i++;
+             }
+             else{
+                 i=0;
+             }
+             setTimeout("changeImg()",time);
+         }
+         window.onload=changeImg;
+        //  document.querySelector("body").append(images)
+    </script> -->
+
+<script>
+  var j = 0;
+  var images1 = [];
+  var time = 1000;
+  images1[0] =
+    "https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/8b7fe54f-6c0a-4035-b6ce-92fce78b6ec5.jpg";
+  images1[1] =
+    "https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/07046144-b6dd-4594-80aa-f4d28d343db9.jpg";
+  images1[2] =
+    "https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/e7f3bd5e-6c36-4d8a-a1b9-81d8025270f1.jpg";
+
+  function changeImg1() {
+    document.slideQUICKBEAUTYTIPSWITHSUGAR.src = images1[j];
+    if (j < images1.length - 1) {
+      j++;
+    } else {
+      j = 0;
+    }
+    setTimeout("changeImg1()", time);
+  }
+  window.onload = changeImg1;
+</script>
+
+<!-- <script src="home.js"></script> -->
+
+<script>
+  var flag = false;
+  document
+    .getElementById("READMOREABOUT")
+    .addEventListener("click", function () {
+      flag = !flag;
+      if (flag == false) {
+        document.getElementById("READMOREABOUTdiv").style.display = "none";
+        document.getElementById("READMOREABOUT").style.backgroundColor =
+          "white";
+        document.getElementById("READMOREABOUT").style.color = "black";
+        document.getElementById("parentREADMOREABOUT").style.height = "100px";
+      } else {
+        document.getElementById("READMOREABOUTdiv").style.display = "block";
+        document.getElementById("READMOREABOUT").style.backgroundColor =
+          "black";
+        document.getElementById("READMOREABOUT").style.color = "white";
+        document.getElementById("parentREADMOREABOUT").style.height = "825px";
+      }
+    });
+
+  var READMOREABOUTdiv1 = document.createElement("div");
+  READMOREABOUTdiv1.innerHTML =
+    "Upgrade your skincare routine with SUGAR Skin Care Products";
+  READMOREABOUTdiv1.setAttribute("class", "category11");
+
+  var READMOREABOUTdiv2 = document.createElement("div");
+  READMOREABOUTdiv2.innerHTML =
+    "Makeup, whether heavy, light, dramatic or the classic no-makeup style is all cool and is the way to go for women today, yet the beauty basics begin with the perfect skin care.   Pampered and well taken care of skin is the perfect canvas to wear any makeup or flaunt the super cool au natural feel. Take the first step towards a beautiful you by embarking on a dedicated skin care ritual. And at SUGAR Cosmetics, we tell you just how simple (and therapeutic) your skin care regime can be! Skilfully crafted in the laboratories of SUGAR are expert face care products that will completely change your skin care game. If you haven’t given much thought to taking care of your skin until today, you are at the right place. From <span id=para1>peel-off face masks, moisturizers</span> to serums, scrubs and lotions, we have you covered! ";
+  READMOREABOUTdiv2.setAttribute("class", "category22");
+
+  var READMOREABOUTdiv3 = document.createElement("div");
+  READMOREABOUTdiv3.innerHTML = "SUGAR Skincare for healthy, glowing skin";
+  READMOREABOUTdiv3.setAttribute("class", "category11");
+
+  var READMOREABOUTdiv4 = document.createElement("div");
+  READMOREABOUTdiv4.innerHTML =
+    "Let us begin with the most crucial and non-negotiable step in a skin care routine- cleansing. Cleansing helps in removing makeup, dirt, pollution and every minuscule debris that clog your pores. This paves a way for skin care products to better penetrate your skin. Wondering where to begin? Presenting the<span id=para1>Power Clay 3-Min Pore Cleansing Mask</span>, a star skin care product infused with the goodness of Charcoal powder and Kaolin Clay that draws out impurities, absorbs excess oils, detoxifies skin and tightens pores. The end results. A deeply refreshed and clean skin. ";
+  READMOREABOUTdiv4.setAttribute("class", "category22");
+
+  var READMOREABOUTdiv9 = document.createElement("div");
+  READMOREABOUTdiv9.innerHTML =
+    "The next important step post cleansing is moisturising. Cleansing, along with removing dirt and makeup, can strip your skin off its natural oils. Hence it is important you replenish it with our<span id=para1>Aquaholic Water Boost Mask</span>that deeply hydrates, nourishes and replumps your skin to its original glory. Put on some good music, light a few scented candles and relax with your favourite drink as the mask works its magic on your skin. 20 mins and that’s all the TLC you need. In case you are a lazy bum who loves to sleep on with face products, you then better sleep with our<span id=para1>Aquaholic Overnight Water Mask</span>that dehydrates, replenishes and soothes your skin overnight. Enriched with herbal extracts and magical spring water from Switzerland, this skin care product can either be dotted onto your skin or blended. Our other hydrating face care  products that we absolutely love and swear by are the<span id=para1>Aquaholic Hydrating Stick, Citrus Got Real Cooling Stick</span>and the <span id=para1>Citrus Got Real Daily Moisturiser. </span>These pH balanced formulas are curated for every skin type to give it the much-needed hydration. Orange peel oil present in our Citrus range acts up to brighten our skin whereas the arginine, castor oil and glycerine present in them fights against free radical damage and helps restore any lost moisture back to your skin.";
+  READMOREABOUTdiv9.setAttribute("class", "category22");
+
+  var READMOREABOUTdiv10 = document.createElement("div");
+  READMOREABOUTdiv10.innerHTML =
+    "The third and the most important step in your skincare regime that secures all the effort you have put in so far is a protecting sunblock. And for that we recommend our<span id=para1>Citrus Got Real SPF30 Sunblock.</span>This gentle, light-weight skin care product is non greasy, provides a broad-spectrum protection against harsh UVA & UVB rays and also helps in curing hyperpigmentation, ageing and dull spots. ";
+  READMOREABOUTdiv10.setAttribute("class", "category22");
+
+  var READMOREABOUTdiv5 = document.createElement("div");
+  READMOREABOUTdiv5.innerHTML =
+    "Shop for a wide range SUGAR skin care products online in India";
+  READMOREABOUTdiv5.setAttribute("class", "category11");
+
+  var READMOREABOUTdiv6 = document.createElement("div");
+  READMOREABOUTdiv6.innerHTML =
+    "Apart from the above-mentioned skin care products, we love our face masks that are perfect for a girl-on-the-go. We understand how busy our lives have become and taking out time for an elaborate skin care regimen might not be your thing. These ingenious skincare products have our heart and soul as they actually deliver what they promise. Tired after a long day at work? Put on a face mask and relax. Have to attend a wedding but have no time for skin TLC? Put on a face mask and you have glowing skin within a matter of minutes. Have you been battling the increasing pollution in the city? A charcoal face mask is your answer. See, how versatile <span id=para1>face masks</span>are? And at SUGAR we have the widest range of face masks for every concern. For example, our <span id=para1> Cheat Sheet Brightening Mask</span> is a serum-soaked mask that helps detoxify, cleanse, hydrate, vitalize & brighten your skin. If you are looking for anti-ageing properties in a face mask, we have our<span id=para1>Cheat Sheet Anti Aging Mask</span>to your rescue. In case you are fighting off stubborn acne, we have our popular<span id=para1>Acne Combo</span>, a combination of two effective and super hydrating face masks that will sooth any flare ups and provide antifungal aid to infected skin. There are so many face care products and such little time!";
+  READMOREABOUTdiv6.setAttribute("class", "category22");
+
+  var READMOREABOUTdiv7 = document.createElement("div");
+  READMOREABOUTdiv7.innerHTML =
+    "Shop SUGAR skin care products online at great price";
+  READMOREABOUTdiv7.setAttribute("class", "category11");
+
+  var READMOREABOUTdiv8 = document.createElement("div");
+  READMOREABOUTdiv8.innerHTML =
+    "At SUGAR Cosmetics, your skin care is our priority and hence we present to you our expert skin care products online at best prices. Now shop from our best skin care products only at www.sugar cosmetics.com and avail great offers and discounts online in India. Our hassle-free payment gateway and cash on delivery options will ensure you come back every time. Come, make some space for our face care products in your skin care regime and say goodbye to skin woes, forever!";
+  READMOREABOUTdiv8.setAttribute("class", "category22");
+
+  document
+    .getElementById("READMOREABOUTdiv")
+    .append(
+      READMOREABOUTdiv1,
+      READMOREABOUTdiv2,
+      READMOREABOUTdiv3,
+      READMOREABOUTdiv4,
+      READMOREABOUTdiv9,
+      READMOREABOUTdiv10,
+      READMOREABOUTdiv5,
+      READMOREABOUTdiv6,
+      READMOREABOUTdiv7,
+      READMOREABOUTdiv8
+    );
+</script>
+<script>
+  var div1 = document.createElement("div");
+  div1.setAttribute("id", "div1");
+  var div1img = document.createElement("img");
+  div1img.setAttribute(
+    "src",
+    "https://in.sugarcosmetics.com/Footer_sugar_icon.png"
+  );
+  div1.append(div1img);
+
+  var div2 = document.createElement("div");
+  div2.setAttribute("id", "div2");
+  var div2img1 = document.createElement("img");
+  //div2img1.innerHTML="<img src=https://in.sugarcosmetics.com/desc-images/facebook.svg/>"
+  div2img1.setAttribute(
+    "src",
+    "https://in.sugarcosmetics.com/desc-images/facebook.svg"
+  );
+
+  var div2img2 = document.createElement("img");
+  div2img2.setAttribute(
+    "src",
+    "data:image/png;base64,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"
+  );
+
+  var div2img3 = document.createElement("img");
+  div2img3.setAttribute(
+    "src",
+    "https://in.sugarcosmetics.com/desc-images/Instagram.svg"
+  );
+
+  var div2img4 = document.createElement("img");
+  div2img4.setAttribute(
+    "src",
+    "https://in.sugarcosmetics.com/desc-images/Pinterest.svg"
+  );
+
+  var div2img5 = document.createElement("img");
+  div2img5.setAttribute(
+    "src",
+    "https://in.sugarcosmetics.com/desc-images/Tumblr.svg"
+  );
+
+  var div2img6 = document.createElement("img");
+  div2img6.setAttribute(
+    "src",
+    "https://in.sugarcosmetics.com/desc-images/Youtube.svg"
+  );
+
+  var div2img7 = document.createElement("img");
+  div2img7.setAttribute(
+    "src",
+    "https://cdns.iconmonstr.com/wp-content/assets/preview/2012/240/iconmonstr-twitter-1.png"
+  );
+
+  div2.append(
+    div2img1,
+    div2img2,
+    div2img3,
+    div2img4,
+    div2img5,
+    div2img6,
+    div2img7
+  );
+
+  var div3 = document.createElement("div");
+  div3.setAttribute("id", "div3");
+
+  var div3text1 = document.createElement("div");
+  div3text1.innerText = "SUBSCRIBE TO OUR NEWSLETTER";
+  var div3text2 = document.createElement("div");
+  div3text2.innerText = "GET THE NEW SUGAR APP TODAY.";
+  div3.append(div3text1, div3text2);
+
+  var div4 = document.createElement("div");
+  div4.setAttribute("id", "div4");
+  var div4input = document.createElement("input");
+  div4input.setAttribute("type", "email");
+  div4input.setAttribute("placeholder", "Your email address");
+
+  var div4btn = document.createElement("button");
+  div4btn.innerText = "SIGN UP";
+
+  var div4text = document.createElement("div");
+  div4text.innerText = "Tap into a better shopping experience.";
+
+  var div4img1 = document.createElement("img");
+  div4img1.setAttribute("src", "https://in.sugarcosmetics.com/playstore.png");
+
+  var div4img2 = document.createElement("img");
+  div4img2.setAttribute("src", "https://in.sugarcosmetics.com/apple-store.png");
+
+  div4.append(div4input, div4btn, div4text, div4img1, div4img2);
+
+  var hr = document.createElement("hr");
+  hr.setAttribute("id", "hr");
+
+  var div5 = document.createElement("div");
+  div5.innerText = "INFORMATION";
+  div5.setAttribute("id", "div5");
+
+  var div6 = document.createElement("div");
+  div6.setAttribute("id", "div6");
+
+  var div61 = document.createElement("div");
+  div61.innerText = "Contact Us";
+  var div62 = document.createElement("div");
+  div62.innerText = "Terms & Conditions";
+  var div63 = document.createElement("div");
+  div63.innerText = "Returns";
+  var div64 = document.createElement("div");
+  div64.innerText = "FAQs";
+  var div65 = document.createElement("div");
+  div65.innerText = "About Us";
+
+  div6.append(div61, div62, div63, div64, div65);
+
+  var div7 = document.createElement("div");
+  div7.innerText = "GET IN TOUCH";
+  div7.setAttribute("id", "div7");
+
+  var div8 = document.createElement("div");
+  div8.setAttribute("id", "div8");
+
+  var parentdiv81 = document.createElement("div");
+  parentdiv81.setAttribute("id", "parentdiv81");
+
+  var div81img = document.createElement("img");
+  div81img.setAttribute(
+    "src",
+    "https://in.sugarcosmetics.com/desc-images/phone_android_white.svg"
+  );
+
+  var div81 = document.createElement("div");
+  div81.innerHTML =
+    "Call us at <p id=cate1>022-2847-5555</p> <p id=cate1>022-6805-6009</p> <p id=cate2>Monday to Friday : 9 AM to 7 PM</p>";
+
+  parentdiv81.append(div81img, div81);
+
+  var div82 = document.createElement("div");
+  div82.innerHTML = "Support <p id=cate1>hello@sugarcosmetics.com</p>";
+
+  var div83 = document.createElement("div");
+  div83.innerHTML = "WORK WITH US <p id=cate1>careers@sugarcosmetics.com</p>";
+  var div84 = document.createElement("div");
+  div84.innerHTML = "PRESS & MEDIA <p id=cate1>pr@sugarcosmetics.com</p>";
+  var div85 = document.createElement("div");
+  div85.innerHTML = "INFLUENCER COLLAB <p id=cate1>JOIN US</p>";
+
+  div8.append(parentdiv81, div82, div83, div84, div85);
+
+  var hr2 = document.createElement("hr");
+  hr2.setAttribute("id", "hr2");
+
+  var div9 = document.createElement("div");
+  div9.innerText = "Copyright © 2022 SUGAR Cosmetics. All rights reserved.";
+  div9.setAttribute("id", "div9");
+
+  document
+    .getElementById("footer")
+    .append(div1, div2, div3, div4, hr, div5, div6, div7, div8, hr2, div9);
+</script>
+
+
+
+<script>
+  var cart = document.querySelector("#cart");
+ cart.addEventListener('click', function(){
+   window.location.href ="AddToCartPage.html"
+ })
+  var wishlist = document.querySelector("#wishlist");
+ wishlist.addEventListener('click', function(){
+   window.location.href ="wishlist.html"
+ })
+  var discount = document.querySelector("#discount");
+ discount.addEventListener('click', function(){
+   window.location.href ="discount.html"
+ })
+   
+    var logo = document.querySelector(".logo");
+ logo.addEventListener('click', function(){
+   window.location.href ="home.html"
+ })
+ </script>
+ 
+ <script>
+   var slideIndex = 0;
+ showSlides();
+ 
+ function showSlides() {
+   var i;
+   var slides = document.getElementsByClassName("mySlides");
+   var dots = document.getElementsByClassName("dot");
+   for (i = 0; i < slides.length; i++) {
+     slides[i].style.display = "none";  
+   }
+   slideIndex++;
+   if (slideIndex > slides.length) {slideIndex = 1}    
+   for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" active", "");
+   }
+   slides[slideIndex-1].style.display = "block";  
+   dots[slideIndex-1].className += " active";
+   setTimeout(showSlides, 2000); // Change image every 2 seconds
+ }
+ </script>
+
+ <script>
+   document.querySelectorAll(".nav_link").addEventListener("mouseover",function(){
+      document.querySelectorAll(".dropdown-makeup").style.display="block"
+   })
+
+   document.querySelectorAll(".nav_link").addEventListener("mouseleave",function(){
+      document.querySelectorAll(".dropdown-makeup").style.display="none"
+   })
+ </script>
+
+ <!-- <script>
+   document.querySelector("#offerconnect").addEventListener("click",function(){
+     window.location.href="offer.html"
+   })
+ </script> -->
+<script>
+  // document.querySelector("#cart").addEventListener("click",fun)
+</script>
+
+
+<script>
+  document.querySelector("#lips").addEventListener("click",()=>{
+    window.location.href="lipstick.html"
+  })
+  document.querySelector("#face").addEventListener("click",()=>{
+    window.location.href="highliters.html"
+  })
+  document.querySelector("#kajal").addEventListener("click",()=>{
+    window.location.href="kajal.html"
+  })
+  document.querySelector("#facebrushes").addEventListener("click",()=>{
+    window.location.href="Face B.html"
+  })
+  document.querySelector("#eyebrushes").addEventListener("click",()=>{
+    window.location.href="Eyes B.html"
+  })
+  document.querySelector("#featured").addEventListener("click",()=>{
+    window.location.href="1featured.html"
+  })
+  document.querySelector("#makeupblog").addEventListener("click",()=>{
+    window.location.href="2makeup.html"
+  })
+  document.querySelector("#skincareblog").addEventListener("click",()=>{
+    window.location.href="3skincare.html"
+  })
+
+
+  document.querySelector("#MASKS").addEventListener("click",()=>{
+    window.location.href="mask.html"
+  })
+
+  document.querySelector("#MOISTURIZERS").addEventListener("click",()=>{
+    window.location.href="moisturizers.html"
+  })
+
+  document.querySelector("#SETTINGMISTS").addEventListener("click",()=>{
+    window.location.href="settingmist.html"
+  })
+
+  document.querySelector("#SHEETMASKCOMBO").addEventListener("click",()=>{
+    window.location.href="sheetmaskcombo.html"
+  })
+
+  document.querySelector("#COFFEECULTURERANGE").addEventListener("click",()=>{
+    window.location.href="coffeeculturerange.html"
+  })
+
+  document.querySelector("#BESTSELLERS").addEventListener("click",()=>{
+    window.location.href="bestseller1.html"
+  })
+
+  document.querySelector("#MAKEUPKITS").addEventListener("click",()=>{
+    window.location.href="makeupkits1.html"
+  })
+
+  document.querySelector("#SUGARMERCHSTATION").addEventListener("click",()=>{
+    window.location.href="sugermerch1.html"
+  })
+</script>
+
+
+

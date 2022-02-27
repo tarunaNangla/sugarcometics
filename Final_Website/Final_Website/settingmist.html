@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Quicksand:wght@300&family=Righteous&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&family=Righteous&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="makeup.css">
+
+</head>
+<body>
+    <!-- top part start -->
+    <div id="top-part">
+
+        <div id="first">
+            <div>
+                <img src="https://in.sugarcosmetics.com/desc-images/breadcrumb_home.svg" alt="">
+                <p>/ Skin care products  <span style="font-weight: 600;">/ Setting spray makeup</span></p>     
+            </div>
+            <div>
+                <img src="https://in.sugarcosmetics.com/desc-images/filterIcon.png" alt="">
+                <p>Filters</p>
+            </div>
+            <div>
+                <img src="https://in.sugarcosmetics.com/desc-images/sortIcon.png" alt="">
+                <p>Sort</p>
+            </div>
+        </div>
+        
+        <div id="second">
+            <p>Setting Spray Makeup<span style="color: #6C757D;">- <span></span> items</span></p>   
+        </div>
+
+    </div>
+    <!-- top part end -->
+
+
+    <!-- products list start-->
+    <div id="productlist"></div>
+    <!-- products list end -->
+
+
+    <!-- read more start -->
+    <div id="parentREADMOREABOUT">
+        <div id="READMOREABOUT">READ MORE ABOUT</div>
+        <div id="READMOREABOUTdiv"></div>
+    </div>
+    <!-- read more end -->
+</body>
+</html>
+
+<script>
+    var productsDetails = [
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-grand-finale-dewy-setting-mist-14890489184339.jpg?v=1619121429",
+        productName: "GRAND FINAL DEWY SETTING MIST",
+        price: "Rs.699",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.7(59)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "ADD TO CART"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-grand-finale-spf30-setting-mist-15637215576147.jpg?v=1619151508",
+        productName: "GRAND FINALE SPF30 SETTING M...",
+        price: "Rs.699",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.7(65)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "ADD TO CART"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-grand-finale-highlighting-setting-mist-14890487218259.jpg?v=1619121418",
+        productName: "GRAND FINALE HIGHLIGHTING...",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        price: "Rs.699",
+        rating: "4.8(52)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "ADD TO CART"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-grand-finale-matte-setting-mist-14890481090643.jpg?v=1619121408",
+        productName: "GRAND FINALE MATTE SETTING M...",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        price: "Rs.699",
+        rating: "4.6(56)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "ADD TO CART"
+    }   
+];
+
+    var count = 0
+
+    productsDetails.map(function(elem){
+
+        var mainDiv = document.createElement("div")
+        mainDiv.setAttribute("class", "container")
+        count++
+
+        var divForShade = document.createElement("div")
+        divForShade.setAttribute("class", "div_for_shade")
+        var numberOfShade = document.createElement("p")
+        numberOfShade.innerText = elem.number;
+        var shadeImg = document.createElement("img")
+        shadeImg.setAttribute("src", elem.shadeImg)
+        divForShade.append(numberOfShade, shadeImg)
+
+        var productImg = document.createElement("img")
+        productImg.setAttribute("src", elem.productImg)
+        productImg.setAttribute("class", "productImg")
+
+        var productName = document.createElement("h6")
+        productName.innerText = elem.productName
+        productName.setAttribute("class", "productName")
+
+        var price = document.createElement("p")
+        price.innerText = elem.price
+        price.setAttribute("class", "price")
+
+        var divForStar = document.createElement("div")
+        divForStar.style.display = "flex"
+        divForStar.style.backgroundColor = "#ffffff"
+        divForStar.style.justifyContent = "center"
+        var star = document.createElement("img")
+        star.setAttribute("src", elem.star)
+        star.style.height = "16px"
+        star.style.backgroundColor = "#ffffff"
+        var rating = document.createElement("p")
+        rating.innerText = elem.rating
+        rating.setAttribute("class", "rating")
+        divForStar.append(star, rating)
+
+        var divHover = document.createElement("div")
+        divHover.setAttribute("class", "div_hover")
+        var div_heart = document.createElement("div")
+        var heart = document.createElement("img")
+        heart.setAttribute("src", elem.heartImg)
+        div_heart.append(heart)
+        var div_select = document.createElement("div")
+        var select = document.createElement("p")
+        select.innerText = elem.select
+        div_select.append(select)
+        divHover.append(div_heart, div_select)
+
+        mainDiv.addEventListener("mouseover", function(){
+            divHover.style.display = "flex"
+        })
+
+        mainDiv.addEventListener("mouseleave", function(){
+            divHover.style.display = "none"
+        })
+
+        mainDiv.append(divForShade, productImg, productName, price, divForStar, divHover)
+
+        document.querySelector("#productlist").append(mainDiv)
+    })
+
+    document.querySelector("#second>p>span>span").innerText = count
+</script>   
+
+<!-- Read More Section -->
+<script>
+
+    var flag = false;
+     document.getElementById("READMOREABOUT").addEventListener("click",function(){
+        flag=!flag;
+        if(flag==false)
+        {
+            document.getElementById("READMOREABOUTdiv").style.display="none"
+            document.getElementById("READMOREABOUT").style.backgroundColor="#f5f5f5"
+            document.getElementById("READMOREABOUT").style.color="black"
+            document.getElementById("parentREADMOREABOUT").style.height="100px"
+        }
+        else{
+            document.getElementById("READMOREABOUTdiv").style.display="block"
+            document.getElementById("READMOREABOUT").style.backgroundColor="#444242"
+            document.getElementById("READMOREABOUT").style.color="white"
+            document.getElementById("parentREADMOREABOUT").style.height="825px"
+        }
+
+     })
+
+
+    var READMOREABOUTdiv1 = document.createElement("div")
+    READMOREABOUTdiv1.innerHTML="Upgrade your skincare routine with SUGAR Skin Care Products";
+    READMOREABOUTdiv1.setAttribute("class","category1")
+    
+
+
+    var READMOREABOUTdiv2 = document.createElement("div")
+    READMOREABOUTdiv2.innerHTML="Makeup, whether heavy, light, dramatic or the classic no-makeup style is all cool and is the way to go for women today, yet the beauty basics begin with the perfect skin care.   Pampered and well taken care of skin is the perfect canvas to wear any makeup or flaunt the super cool au natural feel. Take the first step towards a beautiful you by embarking on a dedicated skin care ritual. And at SUGAR Cosmetics, we tell you just how simple (and therapeutic) your skin care regime can be! Skilfully crafted in the laboratories of SUGAR are expert face care products that will completely change your skin care game. If you haven’t given much thought to taking care of your skin until today, you are at the right place. From <span id=para1>peel-off face masks, moisturizers</span> to serums, scrubs and lotions, we have you covered! "
+    READMOREABOUTdiv2.setAttribute("class","category2")
+
+    var READMOREABOUTdiv3 = document.createElement("div");
+    READMOREABOUTdiv3.innerHTML="SUGAR Skincare for healthy, glowing skin"
+    READMOREABOUTdiv3.setAttribute("class","category1")
+
+    var READMOREABOUTdiv4 = document.createElement("div");
+    READMOREABOUTdiv4.innerHTML="Let us begin with the most crucial and non-negotiable step in a skin care routine- cleansing. Cleansing helps in removing makeup, dirt, pollution and every minuscule debris that clog your pores. This paves a way for skin care products to better penetrate your skin. Wondering where to begin? Presenting the<span id=para1>Power Clay 3-Min Pore Cleansing Mask</span>, a star skin care product infused with the goodness of Charcoal powder and Kaolin Clay that draws out impurities, absorbs excess oils, detoxifies skin and tightens pores. The end results. A deeply refreshed and clean skin. "
+    READMOREABOUTdiv4.setAttribute("class","category2")
+
+    var READMOREABOUTdiv9 = document.createElement("div");
+    READMOREABOUTdiv9.innerHTML="The next important step post cleansing is moisturising. Cleansing, along with removing dirt and makeup, can strip your skin off its natural oils. Hence it is important you replenish it with our<span id=para1>Aquaholic Water Boost Mask</span>that deeply hydrates, nourishes and replumps your skin to its original glory. Put on some good music, light a few scented candles and relax with your favourite drink as the mask works its magic on your skin. 20 mins and that’s all the TLC you need. In case you are a lazy bum who loves to sleep on with face products, you then better sleep with our<span id=para1>Aquaholic Overnight Water Mask</span>that dehydrates, replenishes and soothes your skin overnight. Enriched with herbal extracts and magical spring water from Switzerland, this skin care product can either be dotted onto your skin or blended. Our other hydrating face care  products that we absolutely love and swear by are the<span id=para1>Aquaholic Hydrating Stick, Citrus Got Real Cooling Stick</span>and the <span id=para1>Citrus Got Real Daily Moisturiser. </span>These pH balanced formulas are curated for every skin type to give it the much-needed hydration. Orange peel oil present in our Citrus range acts up to brighten our skin whereas the arginine, castor oil and glycerine present in them fights against free radical damage and helps restore any lost moisture back to your skin."
+    READMOREABOUTdiv9.setAttribute("class","category2")
+
+    var READMOREABOUTdiv10 = document.createElement("div");
+    READMOREABOUTdiv10.innerHTML="The third and the most important step in your skincare regime that secures all the effort you have put in so far is a protecting sunblock. And for that we recommend our<span id=para1>Citrus Got Real SPF30 Sunblock.</span>This gentle, light-weight skin care product is non greasy, provides a broad-spectrum protection against harsh UVA & UVB rays and also helps in curing hyperpigmentation, ageing and dull spots. "
+    READMOREABOUTdiv10.setAttribute("class","category2")
+
+    var READMOREABOUTdiv5 = document.createElement("div");
+    READMOREABOUTdiv5.innerHTML="Shop for a wide range SUGAR skin care products online in India"
+    READMOREABOUTdiv5.setAttribute("class","category1")
+
+    var READMOREABOUTdiv6 = document.createElement("div");
+    READMOREABOUTdiv6.innerHTML="Apart from the above-mentioned skin care products, we love our face masks that are perfect for a girl-on-the-go. We understand how busy our lives have become and taking out time for an elaborate skin care regimen might not be your thing. These ingenious skincare products have our heart and soul as they actually deliver what they promise. Tired after a long day at work? Put on a face mask and relax. Have to attend a wedding but have no time for skin TLC? Put on a face mask and you have glowing skin within a matter of minutes. Have you been battling the increasing pollution in the city? A charcoal face mask is your answer. See, how versatile <span id=para1>face masks</span>are? And at SUGAR we have the widest range of face masks for every concern. For example, our <span id=para1> Cheat Sheet Brightening Mask</span> is a serum-soaked mask that helps detoxify, cleanse, hydrate, vitalize & brighten your skin. If you are looking for anti-ageing properties in a face mask, we have our<span id=para1>Cheat Sheet Anti Aging Mask</span>to your rescue. In case you are fighting off stubborn acne, we have our popular<span id=para1>Acne Combo</span>, a combination of two effective and super hydrating face masks that will sooth any flare ups and provide antifungal aid to infected skin. There are so many face care products and such little time!"
+    READMOREABOUTdiv6.setAttribute("class","category2")
+
+    var READMOREABOUTdiv7 = document.createElement("div");
+    READMOREABOUTdiv7.innerHTML="Shop SUGAR skin care products online at great price"
+    READMOREABOUTdiv7.setAttribute("class","category1")
+
+    var READMOREABOUTdiv8 = document.createElement("div");
+    READMOREABOUTdiv8.innerHTML="At SUGAR Cosmetics, your skin care is our priority and hence we present to you our expert skin care products online at best prices. Now shop from our best skin care products only at www.sugar cosmetics.com and avail great offers and discounts online in India. Our hassle-free payment gateway and cash on delivery options will ensure you come back every time. Come, make some space for our face care products in your skin care regime and say goodbye to skin woes, forever!"
+    READMOREABOUTdiv8.setAttribute("class","category2")
+
+   document.getElementById("READMOREABOUTdiv").append(READMOREABOUTdiv1,READMOREABOUTdiv2,READMOREABOUTdiv3,READMOREABOUTdiv4,READMOREABOUTdiv9,READMOREABOUTdiv10,READMOREABOUTdiv5,READMOREABOUTdiv6,READMOREABOUTdiv7,READMOREABOUTdiv8)
+
+</script>
+<!-- Read More Section -->

@@ -1,0 +1,258 @@
+
+#navbar{
+    width: 100%;
+    height:80px;
+    margin: auto;
+
+    background-color:rgb(21,21,21);
+    margin-bottom: 5px;
+    position: sticky;
+    z-index: 2;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+#container{
+    width: 85%;
+    height: 3200px;
+    display: flex;
+    border: 1px solid black;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+#first{
+    height:98%;
+    width:800px;
+    border: 1px solid black;          
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+    
+}
+#first>div{
+    border: 1px solid black;
+    margin-top: 10px;
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+}
+#second{
+    height: 950px;
+    width:350px;
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+    line-height: 30px;
+    position: sticky;
+    top:85px
+}
+#footer{
+    height: 300px;
+    width: 100%;
+    border: 1px solid white;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+}
+#footer2{
+    height: 400px;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+
+}
+img{
+    width: 95%;
+    height:380px;
+    margin-left: 10px;
+}
+#special2{
+    width:100%;
+    height: 60px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: black;
+}
+.one{
+    color: aliceblue;
+    background-color: black;
+    height: 40px;
+    border: 1px solid black;
+     color: rgb(151,102,44);
+     
+    
+}
+.two,.one:hover{
+  cursor: pointer;
+}
+.two{
+   background-color: rgb(166,124,82);
+   border: 1px solid rgb(166,124,82);
+   height: 30px;
+}
+input{
+   width: 98%;
+   height: 30px;  
+   border:2px solid rgb(68,68,68);
+    background-color: black;
+    color:rgb(68,68,68);
+}
+#recent{
+    height: 30px;
+    width:150px; 
+    text-align: center;
+    background-color: rgb(33,33,33);
+    margin-top: 50px;
+}
+#recent2{
+    height: 30px;
+    width:300px;
+    text-align: center;
+    background-color: rgb(33,33,33);
+    margin-top: 50px;
+}
+hr{
+    margin-top: 0px;
+    border:0.5px solid rgb(33,33,33);
+}
+h3,p,h2{
+    color: white;           
+}
+body{
+    background-color: black;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+#navbox1>img{
+   height: 60px;
+   width: 200px; 
+}
+#navbox2{
+     height: 100%;
+     width: 800px;            
+     display: flex;
+}
+#navbox1{
+    height: 70px;
+    width: 220px;           
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 100px;
+}
+#navbox3{
+    height:70px;
+    width: 200px;           
+    margin-top: 10px;
+    text-align: center;
+
+}
+#navbox2>div{
+    height: 100%;
+    width: 100px;
+    color: white;
+    text-align: center;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 35px;  
+}  
+#navbox2>:hover{
+    background-color: rgb(148, 105, 49);
+}
+#navbox3>:hover{
+    background-color: rgb(148, 105, 49);
+}
+i{
+    color: white;
+    margin-top: 25px;
+    font-size: 18px;
+}
+p~input{
+    margin-top: 20px;
+    border:2px solid rgb(68,68,68);
+    background-color: black;
+    color:rgb(68,68,68);
+}
+#secbutton {
+   width: 100%;
+   height: 40px;
+   background-color: rgb(68,68,68);
+   margin-top: 20px;
+   color: white;
+}
+#secbutton:hover{
+    cursor: pointer;
+}
+#footer2_1{
+    height: 120px;
+    width: 800px;
+    
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+ #footer2_1>div{
+     height: 100%;
+     width: 100px;
+     
+     color: gray;
+     font-family: sans-serif;
+     line-height:40px;
+     text-align: center;
+ }
+ #last{
+     width: 200px;
+     height: 30px;
+     
+     margin: auto;
+     margin-top: 90px;
+     display: flex;
+     justify-content: space-between;
+ }
+ #last>div{
+     height: 100%;
+     width: 70px;
+     
+     color:gray;
+     font-family: sans-serif;
+ }
+ #footer>div{
+     height:200px;
+     width: 400px;
+     
+     margin-left: 250px;
+     margin-top: 50px;
+     
+     
+ }
+ #special{
+     height: 50px;
+     width: 150px;
+     background-color: black;
+     color: aliceblue;
+     border-radius: 4px;
+ }
+.post:hover{
+    cursor: pointer;
+    color: rgb(151,102,44); 
+    text-decoration: underline;
+}
+#footer2_1>div:hover{
+    cursor: pointer;
+    color: rgb(151,102,44); 
+}
+#special:hover{
+    cursor: pointer;
+}
+
+
+

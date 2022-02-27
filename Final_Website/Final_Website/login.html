@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <style>
+        #ownotp{
+            color: deeppink;
+            font-size: 12px;
+            margin-top: 10px;
+            margin-bottom: -40px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="x">&times;</div>
+        <div id="header">      
+            <h2>Login/Sign Up</h2>
+        </div>
+        <div id="login">
+            <div>
+            <img src="https://in.sugarcosmetics.com/smartphone.svg"> 
+             <p>Login/Sign Up Using Phone</p>
+            </div>
+            <form id="form">
+                <div>
+                <p>+91</p>
+                <input type="text" maxlength="10" class="numb" >
+                
+                <input type="submit" value="Request OTP" id="submit" >
+                </div>
+                
+                
+            </form>
+            <p id="guide">Enter your phone number to request an OTP</p>
+            <hr>
+            <p>Enter the 4 digit OTP received on your phone.</p>
+            <input type="text" maxlength="4" class="otp" >
+            <p id="ownotp">Your OTP is 0713</p>
+            <br>
+            <button id="next"><p>Verify OTP</p></button><br>
+            <input type="checkbox" id="checkbox" > <p style="display: inline-block;">Get Important Updates on Whatsapp.</p><h4 style="display: inline-block;">Terms and Conditions</h4>
+        </div>
+        <div id="footer">     
+             <p>Registering for this site allows you to access your order status and history. Just fill in the
+            fields below, and we'll get a new account set up for you in no time. We will only ask you
+            for information necessary to make the purchase process faster and easier.</p>
+            <p style="display: inline-block;">By Signing up or logging in, you agree to our</p>
+            <h4 style="display: inline-block;">Terms and Conditions</h4>
+        </div>
+       
+    </div>
+    
+</body>
+</html>
+<script>
+     document.querySelector("#form").addEventListener("submit",formSubmit)
+     var loginArr=JSON.parse(localStorage.getItem("loginArr"))||[];
+  console.log(document.querySelector(".numb").value)
+ function formSubmit(){
+    event.preventDefault();
+
+   var loginObj={
+      
+         number: document.querySelector(".numb").value,
+         
+      };
+      
+    loginArr.push(loginObj);
+      console.log(loginArr)
+    
+    localStorage.setItem("loginDetails",JSON.stringify(loginArr))
+
+    document.querySelector("#next").addEventListener("click",function(){
+        // window.location.href="signup.html";
+        window.alert("login successful")
+    });
+ }
+</script>
+
+<script>
+    var loginarr = JSON.parse(localStorage.getItem("signupDetails"))
+
+    document.querySelector("#next").addEventListener("click",function(){
+
+        loginarr.map(function(ele){
+
+            if(document.querySelector(".otp").value=="0713"  && document.querySelector(".numb").value==ele.number)
+            {
+                alert("Login Successful!")
+                window.location.href="home.html"
+            }
+            else{
+                alert("Login failed!")
+            }
+        })
+
+
+
+       
+        //window.location.href="home.html"
+    })
+
+    document.querySelector("#submit").addEventListener("click",function(){
+        document.querySelector("#ownotp").style.display="block"
+    })
+</script>
+
+

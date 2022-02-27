@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+
+<body>
+    <div id="container">
+        <div id="x">x</div>
+        <div id="header">      
+            <h2>Login/Sign Up</h2>
+        </div>
+        <div id="login">
+            <div>
+            <img src="https://in.sugarcosmetics.com/smartphone.svg"> 
+             <p id="welcome">Welcome!</h3>
+            </div>
+    
+            <div id="first">
+                <p>Phone Number Verified -</p><p>+91</p><input type="text" maxlength="10" id="number"><p><strong>(Try another number)</strong></h4>
+        </div>
+        <div id="second">
+            <img src="https://in.sugarcosmetics.com/desc-images/facebook_login.svg">
+            <p>or</p>
+            <img src="https://in.sugarcosmetics.com/desc-images/google.png">
+        </div>
+        <hr>
+        <div>Enter Account Details</div>
+     <form id="form">
+        <div>
+            <input type="text" id="firstname" placeholder="First Name">
+            <input type="text" id="lastname" placeholder="Last Name">
+        </div>
+        <div>
+            <input type="text" id="email" placeholder="Email Address">
+        </div>
+        <button id="submit">Save and Continue</button>
+    </form>
+
+        </div>
+        <div id="footer">     
+             <p>Registering for this site allows you to access your order status and history. Just fill in the
+            fields below, and we'll get a new account set up for you in no time. We will only ask you
+            for information necessary to make the purchase process faster and easier.</p>
+            <p style="display: inline-block;">By Signing up or logging in, you agree to our</p>
+            <h4 style="display: inline-block;">Terms and Conditions</h4>
+        </div>
+  
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("#form").addEventListener("submit",formSubmit)
+    
+    
+  
+var signupArr=JSON.parse(localStorage.getItem("signupArr"))||[];
+
+function formSubmit(){
+    event.preventDefault();
+
+   var signupObj={
+         number:document.querySelector("#number").value,
+         firstname: document.querySelector("#firstname").value,
+         lastname:document.querySelector("#lastname").value,
+         email:document.querySelector("#email").value,
+      };
+    signupArr.push(signupObj)
+    console.log(signupArr)
+    localStorage.setItem("signupDetails",JSON.stringify(signupArr))
+    window.location.href="login.html";
+
+    // document.querySelector("#submit").addEventListener("click",function(){
+    //     window.location.href="login.html";
+       
+    // });
+}
+
+
+</script>

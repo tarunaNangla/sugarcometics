@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Info</title>
+    <link rel="stylesheet" href="productInfo.css">
+    <style>
+        *{
+            background-color: rgb(245,245,245);
+        }
+         #htmldiv{
+            display: flex;
+            width: 400px;
+            height: 20px;
+            /* border: 1px solid red; */
+            margin-left: 30px;
+            margin-top: 50px;
+            margin-bottom: 8px;
+        }
+        #htmldiv>img{
+            width: 15px;
+            height: 15px;
+        }
+        #htmldiv>p,#htmldiv>h6{
+            color: gray;
+            /* padding-top: 5px; */
+            font-size: 15px;
+        }
+        #htmldiv>p{
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        #paragraph{
+            color: gray;
+            padding-left: 30px;
+        }
+        #readMore{
+            width: 90%;
+            height: 780px;
+            margin: auto;
+            /* border: 1px solid red; */
+            /* margin-top: 20px; */
+            background-color: white;
+        }
+        .backgroundWhite{
+            background-color: white;
+        }
+        .colorGray{
+            color: gray;
+        }
+        .displayFlex{
+            display: flex;
+        }
+        .marginAuto{
+            margin: auto;
+        }
+        .width98{
+            width: 98%;
+        }
+        .fontsize13{
+            font-size: 13px;
+        }
+        .paddingleft13{
+            padding-left: 13px;
+        }
+        .fontsize14{
+            font-size: 14px;
+        }
+        .fontsize15{
+            font-size: 15px;
+        }
+        .fontsize16{
+            font-size: 16px;
+        }
+        .marginleft2{
+            margin-left: 2px;
+        }
+        .bordernone{
+            border: none;
+        }
+        .margintop20{
+            margin-top: 20px;
+        }
+        .margintop13{
+            margin-top: 13px;
+        }
+        .paddingtop30px{
+            padding-top: 30px;
+        }
+        .margintop11{
+            margin-top: 11px;
+        }
+        #more{
+            text-align: end;
+            color: red;
+            padding-top: 5px;
+        }
+        #descriptionbox{
+            width: 99%;
+            align-items: center;
+            height: 40px;
+            justify-content: space-between;
+            font-size: 15px;
+            font-weight: 500;
+            background-color: rgb(245,245,245);
+            color: rgb(51,132,252);
+        }
+        #readMore2{
+            margin-top: 40px;
+            margin-left: 13px;
+        }
+        #btn{
+            background-color: black;color: white;border-radius: 3px;;width: 100px;height: 30px;
+        }
+        #offer{
+            padding-bottom: 13px
+        }
+        
+    </style>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        #footer{
+            width: 100%;
+            height: 620px;
+            /* border: 1px solid red; */
+            background-color: black;
+            color: white;
+        }
+        #div1{
+            margin: auto;
+            width: 120px;
+            height: 120px;
+            /* border: 1px solid white; */
+            background-color: black;
+        }
+        #div1>img{
+            height: 120px;
+            width: 120px;
+            background-color: black;
+        }
+        #div2{
+            height: 20px;
+            width: 200px;
+            margin: auto;
+            /* border: 1px solid white; */
+            display: flex;
+            background-color: black;
+        }
+        #div2>img{
+            width: 20px;
+            height: 20px;
+            /* display: block; */
+            margin-right: 11px;
+            background-color: black;
+        }
+        #div3{
+            width: 900px;
+            height: 30px;
+            /* border: 1px solid white; */
+            margin-left: 100px;
+            margin-top: 30px;
+            display: flex;
+            background-color: black;
+        }
+        #div3>div:first-child{
+            justify-content: flex-start;
+            background-color: black;
+        }
+        #div3>div:last-child{
+            justify-content: flex-end;
+            margin-left: 330px;
+            background-color: black;
+        }
+        #div4{
+            width: 1100px;
+            height: 60px;
+            /* border: 1px solid white; */
+            margin-left: 100px;
+            margin-top: 5px;
+            display: flex;
+            background-color: black;
+        }
+        #div4>input{
+            background-color: black;
+            color: white;
+            font-size: 15px;
+            border: none;
+            width: 260px;
+            height: 60px;
+        }
+        #div4>button{
+            background-color: deeppink;
+            color: white;
+            border: deeppink;
+            width: 93.38px;
+            height: 40px;
+            border-radius: 7px;
+            margin-top: 20px;
+            background-color: black;
+        }
+        #div4>div{
+            width: 206px;
+            height: 48px;
+            color: gray;
+            margin-left: 250px;
+            margin-top: 7px;
+            background-color: black;
+        }
+        #div4>img:nth-child(4){
+            width: 99.88px;
+            height:30px ;
+            margin-top: 4px;
+            margin-right: 8px;
+            background-color: black;
+        }
+        #div4>img:nth-child(5){
+            width: 87.52px;
+            height:30px ;
+            margin-top: 4px;
+            /* margin-right: 8px; */
+            background-color: black;
+        }
+        #hr{
+            margin-left: 100px;
+            width: 260px;
+            background-color: black;
+        }
+        #div5,#div7{
+            width: 1140px;
+            height: 20.39px;
+            font-size: 17px;
+            margin: 0px 0px 8px;
+            margin-top: 20px;
+            margin-left: 100px;
+            background-color: black;
+        }
+        #div6{
+            width: 1140px;
+            height: 24px;
+            font-size: 16px;
+            margin: 0px 0px 8px;
+            margin-top: 15px;
+            margin-left: 100px;
+            display: flex;
+            color: gray;
+            /* border: 1px solid white; */
+            background-color: black;
+        }
+        #div6>div{
+            margin-right: 90px;
+            background-color: black;
+        }
+        #div8{
+            width: 1270px;
+            height: 90px;
+            margin-left: 100px;
+            margin-top: 20px;
+            display: flex;
+            color: white;
+            /* border: 1px solid white; */
+            background-color: black;
+        }
+        #cate1{
+            color: gray;
+            padding-top: 5px;
+            background-color: black;
+        }
+        #cate2{
+            color: gray;
+            font-size: 13px;
+            padding-top: 5px;
+            background-color: black;
+        }
+        #parentdiv81{
+            display: flex;
+            background-color: black;
+        }
+        #parentdiv81>img{
+            width: 15px;
+            height: 15px;
+            background-color: black;
+        }
+        #div8>div{
+            margin-right: 60px;
+            background-color: black;
+        }
+        #hr2{
+            margin-left: 70px;
+            margin-right: 40px;
+            margin-top: 30px;
+            background-color: black;
+        }
+        #div9{
+            width: 1140px;
+            height: 20.39px;
+            font-size: 17px;
+            margin: auto;
+            margin-top: 30px;
+            margin-left: 500px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="htmldiv">
+        <img src="https://in.sugarcosmetics.com/desc-images/breadcrumb_home.svg" alt="">
+        <p>/</p>
+        <!-- <h6>Coffee Culture Lip Scrub</h6> -->
+    </div>
+    <div id="parent"></div>
+    <div id="readMore">
+        <div id="bigdiv1">
+            <div class="bigdiv1childdiv">
+                <img src="https://in.sugarcosmetics.com/productbanner.svg" alt="" class="bigdiv1childimg"/>
+            </div>
+        </div>
+        <div class="backgroundWhite displayFlex"  id="readMore2" >
+            <p  class="backgroundWhite colorGray fontsize13">Check Estimated Delivery Date For your Location :</p>
+            <input class="backgroundWhite bordernone"type="text" placeholder="Enter Pincode">
+            <button class="bordernone" id="btn" >Check Now</button>
+        </div>
+        <div class="backgroundWhite marginAuto width98" id="offer">Available Offers!!</div>
+        <p class="backgroundWhite colorGray fontsize13 paddingleft13">– Free Smudge Me Not Mini Set on minimum purchase of Rs. 999 Know More</p>
+        <p class="backgroundWhite colorGray fontsize13 paddingleft13">– Get a Triple Delight Makeup Set+ Pouch on a spend of Rs. 899 Know More</p>
+        <p class="backgroundWhite colorGray fontsize13 paddingleft13">– Get a SMNLL Minis Set + Pouch on a spend of Rs. 999 Know More</p>
+        <p class="backgroundWhite colorGray fontsize13" id="more">+more</p>
+        <div class="displayFlex marginAuto margintop13" id="descriptionbox">
+            <div>Description</div>
+            <div>Ingreadiants</div>
+            <div>How to apply</div>
+            <div>Commanly asked questions</div>
+            <div>Reviews</div>
+        </div>
+        <div class="backgroundWhite colorGray marginAuto width98 fontsize14 margintop11">Are dry, flaky lips ruining your perfect pout? We got your back! Try the super nourishing SUGAR Coffee Culture Lip Scrub. This unique lip scrub in a easy-to-use stick format is infused with tiny granules of coffee along with coffee seed oil which gently exfoliates your lips to reveal smooth, plump and hydrated lips.</div>
+
+        <div class="backgroundWhite colorGray marginAuto width98 fontsize14 margintop11">Perfect for pre-lipstick application, Coffee Culture Lip Scrub with a creamy, wax-based formula polishes your lips, removes dryness and flakiness and leads lips extra softness and suppleness. It buffs away dead skin and lightens pigmentation, leaving you with smooth, pink lips. Expertly crafted with glycerin, olive fruit oil, jojoba seed oil and almond oil, this 98% vegetarian coffee lip scrub will leave your lips with a lasting shot of hydration!</div>
+
+        <div class="backgroundWhite marginAuto width98 fontsize16 margintop11">How it works:</div>
+
+         <div class="backgroundWhite colorGray marginAuto width98 fontsize14 margintop13">
+            - The super hydrating lip scrub is made using fine coffee particles that buffs away dry, chapped lips while the medley of soothing oils nourish, soothe and heal flaky lips</div>
+         <div class="backgroundWhite colorGray marginAuto width98 fontsize14">- Packed with the goodness of caffeine, it lightens pigmentation and gives you super smooth, pink lips</div>
+         <div class="backgroundWhite colorGray marginAuto width98 fontsize14">- The formula leaves a soft, buttery film. It smoothes and preps lips, creating a clean canvas for your lipstick to glide on flawlessly</div>
+         <div class="backgroundWhite colorGray marginAuto width98 fontsize14">- The formula is 100% vegan, cruelty-free and free from parabens, alcohol and sulphates</div>
+
+         <div class="backgroundWhite marginAuto width98 fontsize16 margintop11">Key ingredients:</div>
+         
+         <div class="backgroundWhite colorGray marginAuto width98 fontsize14 margintop13">- Minute coffee granules help scrub away dead skin cells and flakiness, giving you a smooth pout</div>
+         <div class="backgroundWhite colorGray marginAuto width98 fontsize14">- Olive, jojoba and almond oil soothe the lips and give them intense moisturization</div>
+         <div class="backgroundWhite colorGray marginAuto width98 fontsize14">- Coffee seed oil rejuvenates the skin and lightens pigmentation, leaving behind soft, shiny lips</div>
+
+         <div class="backgroundWhite displayFlex marginAuto width98 fontsize16 margintop20">
+             <div class="backgroundWhite">Maximum Retail Price:</div>
+             <div class="backgroundWhite colorGray fontsize15 marginleft2">Rs. 299</div>
+         </div>
+         <div class="backgroundWhite displayFlex marginAuto width98 fontsize16 margintop20">
+            <div class="backgroundWhite">Net Volume:</div>
+            <div class="backgroundWhite colorGray fontsize15 marginleft2">3.5g</div>
+        </div>
+        <div class="backgroundWhite displayFlex marginAuto width98 fontsize16">
+            <div class="backgroundWhite">Manufactured for:</div>
+            <div class="backgroundWhite colorGray fontsize15 marginleft2">SUGAR Cosmetics LLC</div>
+        </div>
+        <div class="backgroundWhite displayFlex marginAuto width98 fontsize16">
+            <div class="backgroundWhite">Company Address:</div>
+            <div class="backgroundWhite colorGray fontsize15 marginleft2">8 The Green, Suite A, Dover, DE 19901</div>
+        </div>
+        <div class="backgroundWhite displayFlex marginAuto width98 fontsize16">
+            <div class="backgroundWhite">Country of Origin:</div>
+            <div class="backgroundWhite colorGray fontsize15 marginleft2">PRC</div>
+            
+        </div>
+
+        <p class="backgroundWhite colorGray paddingleft13 fontsize14 paddingtop30px">Get brew-tiful, glowing looking skin with our intensely hydrating, super refreshing Coffee Culture Skincare range. Check out the entire range here.</p>
+     
+
+
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
+
+<script>
+    var productInfoArr = JSON.parse(localStorage.getItem("productInfoData"));
+
+
+//console.log(skincareArr);
+
+var addtocartArr = JSON.parse(localStorage.getItem("addtocartData")) ||[];
+
+function displayData(productInfoArr){
+    document.getElementById("parent").innerHTML="";
+   
+    productInfoArr.map(function(ele,index){
+    var innerbox = document.createElement("div");
+    innerbox.setAttribute("id","innerbox")
+
+    // innerbox.addEventListener("click",function(){
+    //     productInfo(ele)
+    // })
+
+    var pseudodiv = document.createElement("div")
+    innerbox.addEventListener("mouseover",()=>{
+        pseudodiv.style.display="flex"
+
+    })
+    innerbox.addEventListener("mouseleave",()=>{
+        pseudodiv.style.display="none"
+    })
+    
+       
+        pseudodiv.setAttribute("id","pseudodiv")
+        
+        var heart = document.createElement("div")
+        var hearticon = document.createElement("img");
+        hearticon.setAttribute("src","data:image/png;base64,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")
+        hearticon.style.width="30px";
+        hearticon.style.height="30px"
+
+        heart.append(hearticon);
+    
+        var cart = document.createElement("div")
+        cart.innerHTML="ADD TO CART";
+        cart.style.backgroundColor="black"
+        cart.style.paddingTop="5px"
+
+        pseudodiv.append(heart,cart)
+   
+
+    var img = document.createElement("img");
+    img.setAttribute("src",ele.image_url);
+    img.setAttribute("id","img")
+
+    var name = document.createElement("h4");
+    name.innerText=ele.name;
+
+    var pricediv = document.createElement("div");
+    pricediv.setAttribute("id","pricediv");
+    pricediv.style.backgroundColor="white"
+
+    var rs = document.createElement("div")
+    rs.innerText="Rs."
+    rs.style.backgroundColor="white"
+    rs.style.color="gray"
+
+    var price = document.createElement("div");
+    price.innerText=ele.price;
+    price.setAttribute("id","price")
+    price.style.backgroundColor="white"
+    price.style.color="gray"
+    price.style.marginTop="-8px"
+
+    var stardiv = document.createElement("div")
+    stardiv.setAttribute("id","stardiv")
+
+    var star = document.createElement("img");
+    star.setAttribute("src","https://in.sugarcosmetics.com/star_filled.png");
+    star.setAttribute("class","star")
+    star.style.backgroundColor="white"
+    var star1 = document.createElement("img");
+    star1.setAttribute("src","https://in.sugarcosmetics.com/star_filled.png");
+    star1.setAttribute("class","star")
+    star1.style.backgroundColor="white"
+    var star2 = document.createElement("img");
+    star2.setAttribute("src","https://in.sugarcosmetics.com/star_filled.png");
+    star2.setAttribute("class","star")
+    star2.style.backgroundColor="white"
+    var star3 = document.createElement("img");
+    star3.setAttribute("src","https://in.sugarcosmetics.com/star_filled.png");
+    star3.setAttribute("class","star")
+    star3.style.backgroundColor="white"
+    var star4 = document.createElement("img");
+    star4.setAttribute("src","https://in.sugarcosmetics.com/star_filled.png");
+    star4.setAttribute("class","star")
+    star4.style.backgroundColor="white"
+
+
+
+    var rating = document.createElement("div");
+    rating.innerText=ele.rating;
+    rating.style.backgroundColor="white"
+    rating.style.color="gray"
+    rating.style.marginTop="9px"
+    rating.style.marginLeft="-15px"
+
+   
+
+    pricediv.append(rs,price)
+
+    stardiv.append(star,star1,star2,star3,star4,rating)
+
+    var addtocartdiv = document.createElement("div")
+    addtocartdiv.innerText="ADD TO CART"
+    addtocartdiv.setAttribute("id","addtocartdiv")
+
+    addtocartdiv.addEventListener("click",function(){
+        addtocartfunction(ele,index);
+    })
+
+    
+    innerbox.append(img,name,pseudodiv);
+
+    var sidediv = document.createElement("div")
+    sidediv.setAttribute("id","sidediv")
+    var sidename = document.createElement("div")
+    sidename.innerText=ele.name;
+    sidename.style.backgroundColor="white"
+    sidename.style.fontSize="25px"
+    sidename.style.fontWeight="700"
+    // sidename.style.color="gray"
+    // sidename.style.fontWeight = 900;
+    // sidename.style.fontSize = "30px";
+
+
+    var childofsildediv = document.createElement("div");
+    childofsildediv.setAttribute("id","childofsildediv")
+    var p = document.createElement("div");
+    p.innerText="Share with friends:"
+    p.style.backgroundColor="white"
+    p.style.fontSize="15px"
+    p.style.color="gray"
+
+    var img1 = document.createElement("img")
+    img1.setAttribute("src","https://in.sugarcosmetics.com/sharebtn/Whatsapp.svg");
+    img1.setAttribute("class","logo")
+
+    var img2 = document.createElement("img")
+    img2.setAttribute("src","https://in.sugarcosmetics.com/sharebtn/Facebook.svg");
+    img2.setAttribute("class","logo")
+
+    var img3 = document.createElement("img")
+    img3.setAttribute("src","https://in.sugarcosmetics.com/sharebtn/Twitter.svg");
+    img3.setAttribute("class","logo")
+
+    var img4 = document.createElement("img")
+    img4.setAttribute("src","https://in.sugarcosmetics.com/sharebtn/Tumblr.svg");
+    img4.setAttribute("class","logo")
+
+    var img5 = document.createElement("img")
+    img5.setAttribute("src","https://in.sugarcosmetics.com/sharebtn/Mail.svg");
+    img5.setAttribute("class","logo")
+
+    var img6 = document.createElement("img")
+    img6.setAttribute("src","https://in.sugarcosmetics.com/sharebtn/Linkedin.svg");
+    img6.setAttribute("class","logo")
+
+    childofsildediv.append(p,img1,img2,img3,img4,img5,img6)
+
+    sidediv.append(sidename,pricediv,stardiv,addtocartdiv,childofsildediv)
+
+
+
+    document.getElementById("parent").append(innerbox,sidediv);
+
+
+    var h6 = document.createElement("h6");
+    h6.innerText=ele.name
+    document.getElementById("htmldiv").append(h6);
+    
+  count++;
+
+
+});
+
+function  addtocartfunction(ele,index){
+    ele.cartquantity=1;
+    ele.id="cartproduct"+index;
+    console.log(ele.cartquantity)
+    addtocartArr.push(ele);
+    localStorage.setItem("addtocartData",JSON.stringify(addtocartArr))
+    window.location.href="AddToCartPage.html"
+    alert("Item added to Cart")
+   
+}
+}
+
+
+
+displayData(productInfoArr);
+
+// var count = 0;
+
+
+// localStorage.removeItem("addtocartData")
+</script>
+<script>
+    var div1 = document.createElement("div")
+    div1.setAttribute("id","div1");
+    var div1img = document.createElement("img");
+    div1img.setAttribute("src","https://in.sugarcosmetics.com/Footer_sugar_icon.png")
+    div1.append(div1img)
+
+    var div2 = document.createElement("div")
+    div2.setAttribute("id","div2");
+    var div2img1 = document.createElement("img")
+    //div2img1.innerHTML="<img src=https://in.sugarcosmetics.com/desc-images/facebook.svg/>"
+    div2img1.setAttribute("src","https://in.sugarcosmetics.com/desc-images/facebook.svg");
+
+    var div2img2 = document.createElement("img")
+    div2img2.setAttribute("src","data:image/png;base64,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");
+
+    var div2img3 = document.createElement("img")
+    div2img3.setAttribute("src","https://in.sugarcosmetics.com/desc-images/Instagram.svg");
+
+    var div2img4 = document.createElement("img")
+    div2img4.setAttribute("src","https://in.sugarcosmetics.com/desc-images/Pinterest.svg");
+
+    var div2img5 = document.createElement("img")
+    div2img5.setAttribute("src","https://in.sugarcosmetics.com/desc-images/Tumblr.svg");
+
+    var div2img6 = document.createElement("img")
+    div2img6.setAttribute("src","https://in.sugarcosmetics.com/desc-images/Youtube.svg");
+
+    var div2img7 = document.createElement("img")
+    div2img7.setAttribute("src","https://cdns.iconmonstr.com/wp-content/assets/preview/2012/240/iconmonstr-twitter-1.png");
+
+    div2.append(div2img1,div2img2,div2img3,div2img4,div2img5,div2img6,div2img7)
+
+    var div3 = document.createElement("div")
+    div3.setAttribute("id","div3")
+
+    var div3text1 = document.createElement("div")
+    div3text1.innerText="SUBSCRIBE TO OUR NEWSLETTER"
+    var div3text2 = document.createElement("div")
+    div3text2.innerText="GET THE NEW SUGAR APP TODAY."
+    div3.append(div3text1,div3text2)
+
+    var div4 = document.createElement("div");
+    div4.setAttribute("id","div4")
+    var div4input = document.createElement("input")
+    div4input.setAttribute("type","email")
+    div4input.setAttribute("placeholder","Your email address")
+    
+    var div4btn = document.createElement("button")
+    div4btn.innerText="SIGN UP"
+
+    var div4text = document.createElement("div")
+    div4text.innerText="Tap into a better shopping experience."
+
+    var div4img1 = document.createElement("img")
+    div4img1.setAttribute("src","https://in.sugarcosmetics.com/playstore.png")
+
+    var div4img2 = document.createElement("img");
+    div4img2.setAttribute("src","https://in.sugarcosmetics.com/apple-store.png")
+
+    div4.append(div4input,div4btn,div4text,div4img1,div4img2)
+
+    var hr = document.createElement("hr")
+    hr.setAttribute("id","hr")
+
+    var div5 = document.createElement("div")
+    div5.innerText="INFORMATION"
+    div5.setAttribute("id","div5")
+
+    var div6 = document.createElement("div");
+    div6.setAttribute("id","div6")
+
+    var div61 = document.createElement("div");
+    div61.innerText="Contact Us"
+    var div62 = document.createElement("div");
+    div62.innerText="Terms & Conditions"
+    var div63 = document.createElement("div");
+    div63.innerText="Returns"
+    var div64 = document.createElement("div");
+    div64.innerText="FAQs"
+    var div65 = document.createElement("div");
+    div65.innerText="About Us"
+
+    div6.append(div61,div62,div63,div64,div65)
+
+    var div7 = document.createElement("div")
+    div7.innerText="GET IN TOUCH"
+    div7.setAttribute("id","div7")
+
+    
+    var div8 = document.createElement("div")
+     div8.setAttribute("id","div8")
+
+     var parentdiv81 = document.createElement("div")
+     parentdiv81.setAttribute("id","parentdiv81")
+     
+     var div81img = document.createElement("img")
+     div81img.setAttribute("src","https://in.sugarcosmetics.com/desc-images/phone_android_white.svg")
+
+     var div81 = document.createElement("div")
+     div81.innerHTML="Call us at <p id=cate1>022-2847-5555</p> <p id=cate1>022-6805-6009</p> <p id=cate2>Monday to Friday : 9 AM to 7 PM</p>"
+
+     parentdiv81.append(div81img,div81)
+      
+     var div82 = document.createElement("div");
+     div82.innerHTML="Support <p id=cate1>hello@sugarcosmetics.com</p>"
+  
+     var div83 = document.createElement("div");
+     div83.innerHTML="WORK WITH US <p id=cate1>careers@sugarcosmetics.com</p>"
+     var div84 = document.createElement("div");
+     div84.innerHTML="PRESS & MEDIA <p id=cate1>pr@sugarcosmetics.com</p>"
+     var div85 = document.createElement("div");
+     div85.innerHTML="INFLUENCER COLLAB <p id=cate1>JOIN US</p>"
+
+
+    div8.append(parentdiv81,div82,div83,div84,div85)
+
+    var hr2 = document.createElement("hr")
+    hr2.setAttribute("id","hr2")
+
+    var div9 = document.createElement("div")
+    div9.innerText="Copyright © 2022 SUGAR Cosmetics. All rights reserved."
+    div9.setAttribute("id","div9")
+    
+
+    document.getElementById("footer").append(div1,div2,div3,div4,hr,div5,div6,div7,div8,hr2,div9)
+
+</script>
+
+
+
+

@@ -1,0 +1,126 @@
+#container{
+    height: 900px;
+    width: 700px;
+    background-image:url('https://in.sugarcosmetics.com/Login_bg.svg');
+    margin: auto;
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+}
+#login{
+    height: 380px;
+    width: 90%;
+    text-align: left;
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   padding-left: 20px;
+   padding-top: 20px;
+   padding-right: 20px;
+   border-radius: 4px;
+}
+#first{
+        display: flex;
+        height: 10px;
+        width: 90%;
+        
+        justify-content: space-between;
+    }
+    #first>input{
+        height: 45px;
+        width: 150px;
+        text-align: bottom;
+        margin-left: 0px;
+        font-size: 16px;
+        border-style: none;
+        outline: none;
+    }
+
+
+#login>div{
+    height: 35px;
+    width: 90%px;
+    display: flex;
+    font-family: sans-serif;
+}
+  
+#footer>h2{
+    padding-top: 50px;
+}
+strong,h4:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(252,39,121);
+}
+#header{
+   margin-top: 40px;
+    margin-left: 20px;
+   
+    width: 300px;
+    height: 30px;
+    color: white;
+}
+#header>h2{
+   margin-top: 10px;
+}
+#welcome{
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+ #footer{
+   text-align: center;
+   margin-top: 60px;
+    }
+#second{
+    width: 400px;
+    height: 50px;
+    
+    margin-top: 15px;
+    justify-content: space-between;
+}
+#firstname{
+    height: 40px;
+    width: 190px;
+    background-color: rgb(241,241,241);
+    border-style: none;
+    outline: none; 
+    padding-left: 10px;
+}
+#lastname{
+    height: 40px;
+    width: 190px;
+   margin-left: 15px;
+   background-color:rgb(241,241,241);
+   border-style: none;
+   outline: none; 
+   padding-left: 10px;
+}
+#email{
+    margin-top: 20px;
+    width: 410px;
+    height: 40px;
+    background-color:rgb(241,241,241);
+    border-style: none;
+    outline: none;  
+    padding-left: 10px;
+}
+button{
+    margin-top: 50px;
+    width: 428px;
+    height: 45px;
+    background-color:rgb(253,170,201);
+    border-style: none;
+    color: white;
+}
+button,#second>img:hover{
+    cursor: pointer;
+}
+#x{
+    margin-left: 20px;
+    color: white;
+    font-size: 24px;
+    color:rgb(249,161,198);
+}
