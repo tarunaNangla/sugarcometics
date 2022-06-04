@@ -11,3 +11,6 @@ Landing Page:
 Trending Page:
 ![Screenshot 2022-05-28 191138](https://user-images.githubusercontent.com/99668292/170828051-d4379298-0309-4d97-87bb-3a7c45a6f987.jpg)
 
+How to run:
+1)Right click on index.html
+2)Open with live server 
